@@ -1,3 +1,18 @@
+---
+title: Contributing to the Knowledge Base
+description: '# Contributing to the Knowledge Base'
+status: draft
+created: '2025-09-10'
+updated: '2025-09-10'
+tags:
+- /
+- AI knowledge base
+- CONTRIBUTING.md
+- Documents
+- StudiesVault v2
+version: 1.0.0
+---
+
 # Contributing to the Knowledge Base
 
 This document outlines the processes and guidelines for contributing to the knowledge base.

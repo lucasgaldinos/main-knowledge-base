@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use this knowledge base, please cite it as below."
+type: dataset
+title: "AI Knowledge Base: Comprehensive Tools Reference and Academic Research Platform"
+abstract: "A comprehensive knowledge base providing structured documentation for AI assistant tools, academic research methodologies, and systematic content creation workflows. Features extensive tool reference documentation with operational characteristics, academic research integration, and intelligent automation for knowledge management."
+authors:
+  - family-names: "Galdino"
+    given-names: "Lucas"
+    orcid: "https://orcid.org/0000-0000-0000-0000"  # Update with actual ORCID
+    affiliation: "Independent Researcher"
+version: "1.0.0"
+date-released: 2025-09-10
+url: "https://github.com/lucasgaldinos/main-knowledge-base"
+repository-code: "https://github.com/lucasgaldinos/main-knowledge-base"
+license: MIT
+keywords:
+  - "artificial intelligence"
+  - "knowledge management" 
+  - "academic research"
+  - "tool documentation"
+  - "systematic methodology"
+  - "research automation"
+  - "ai agents"
+  - "mcp servers"
+contact:
+  - family-names: "Galdino"
+    given-names: "Lucas"
+    email: "lucas@example.com"  # Update with actual email
+preferred-citation:
+  type: generic
+  title: "AI Knowledge Base: Comprehensive Tools Reference and Academic Research Platform"
+  authors:
+    - family-names: "Galdino"
+      given-names: "Lucas"
+  year: 2025
+  url: "https://github.com/lucasgaldinos/main-knowledge-base"
+  notes: "Version 1.0.0 - Enhanced with operational characteristics and academic integration"
+references:
+  - type: article
+    title: "Systematic Content Recreation: A Methodology for Enhanced Documentation"
+    authors:
+      - family-names: "Galdino"
+        given-names: "Lucas"
+    year: 2025
+    notes: "Internal methodology developed for knowledge base enhancement"
+  - type: software
+    title: "Model Context Protocol (MCP) Integration Framework"
+    year: 2025
+    notes: "Integration framework for AI agent tool orchestration"

@@ -1,3 +1,18 @@
+---
+title: AI Knowledge Base
+description: '# AI Knowledge Base'
+status: published
+created: '2025-09-10'
+updated: '2025-09-10'
+tags:
+- /
+- AI knowledge base
+- Documents
+- README old.md
+- StudiesVault v2
+version: 1.0.0
+---
+
 # AI Knowledge Base
 
 A comprehensive knowledge base organized using function-based principles for optimal navigation and scalability.
