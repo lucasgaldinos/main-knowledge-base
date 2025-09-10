@@ -1,0 +1,89 @@
+---
+title: ## High Priority Tasks
+
+### IN PROGRESS ⏳
+- [x] **Tool Reference & Toolset Enhancement** ✅ COMPLETED 2025-09-10
+  - [x] Create comprehensive 1NF tool table with all available tools ✅
+  - [x] Add 4 new categories: AI Reasoning & Analysis, Diagram & Visualization, Document Processing, Workspace Management ✅
+  - [x] Update research-automation toolset to use "arxiv_improved" instead of mcp_arxiv-mcp-ser tools ✅
+  - [x] Refine all 10 toolsets in custom_toolset.toolsets.jsonc with enhanced descriptions and tool combinations ✅
+  - [x] Add usage examples, best practices, and workflow patterns ✅
+
+### PENDING 📋 and Priorities
+description: Detailed task list with priorities and implementation notes
+status: active
+created: 2025-09-10
+updated: 2025-09-10
+tags: [todo, tasks, priorities, implementation]
+---
+
+# Task List and Priorities
+
+## HIGH Priority Tasks
+
+- [x] ✅ **COMPLETED: Tool Reference & Toolset Enhancement**
+  - Update comprehensive-tools-reference.md with 1NF table of all tools
+  - Add 3+ new tool categories (AI Reasoning, Diagram/Visualization, Research/Academic)
+  - Migrate toolsets to prefer "arxiv_improved" over current ArXiv tools
+  - Refine custom_toolset.toolsets.jsonc with optimized tool groupings
+  - Create usage examples for every available tool
+  - **Status: IN PROGRESS - Phase 1 starting**
+
+- [ ] HIGH search for how to do proper instructions for copilot
+  - /home/lucas_galdino/repositories/mcp_servers/arxiv-mcp-improved/.github/.knowledge_base/vscode_copilot_customization/2-custom_instructions_examples.md
+- [ ] HIGH search for what are the required documents, guides, references and decisions for a good documentation.
+  - make a deep research on documentation best practices.
+    - what are "pluses" in documentation?
+    - documenting with sphynx similar to tsblip95.docs
+- [ ] HIGH search for what are the testing best practices.
+  - make a deep research on testing best practices.
+  - tokenBudget 50000 - temperature 0.2
+  - how to automatically check things e.g using (black, ruff, pylance, pydantic etc.)
+- [ ] HIGH search for what are the best practices for testing with vscode (JS focused), how to automate testing with vscode.
+  - make a deep research on testing best practices with vscode.
+  - tokenBudget 50000 - temperature 0.2
+- [ ] HIGH Search and register how to use vscode toolsets effectively. Create a search plan for that.
+  - tokenBudget 50000 - temperature 0.2
+- [ ] HIGH how to create an mcp that does specific step by step processes or how to combine mcps: arxiv-mcp-improved + deep-research + deep code research on a repository.
+  - example deep-code-research, deep-research and arxiv-mcp, maybe using langchain.
+  - parallel processes/agents are also important
+- [ ] MEDIUM deep-research secifically fo vscode update docs. Currently, it's separated by date, but I want it to be separated by topics. Input it into `docs/{vscode_docs_folder}/`. Use gemini-2.5-pro due to higher context.
+  - REF:
+    1. <https://code.visualstudio.com/updates/>
+
+       Explore all `<nav id="docs-navbar" aria-label="Updates" class="docs-nav updates-nav visible-md visible-lg">`, but only this source.
+- [ ] ULTRA HIGH Vscode copilot should also have its docs, guides and examples:
+  1. for instructions
+  2. for prompts
+  3. for agent toolsets
+  4. for mcp configurations and servers, specifically following vscode github copilots.
+
+- [ ] add `mcp-deep-code-research` to `arxiv-mcp-improved` to analyze the code and suggest improvements.
+- [ ] add `yaml` proper tags to all `.md` files.
+- [ ] `python-testing-guide.md` needs proper formatting, specially for formulas.
+Documents/StudiesVault_v2/AI-knowledge-base/main-knowledge-base ./.github/.knowledge_base` automatically.
+  - Make a deep research in automated testing for python and js.
+- [ ] **USE DEEP-CODE-RESEARCH-MCP TO EVALAUTE THE CODE FOR EXCESSIVE BOILER PLATE, POOR DESIGN PATTERNS, POOR ARCHITECTURE, POOR SYSTEM DESIGN, POOR FOLDER ORGANIZATION.**
+- [ ] how to test based on the testing and testing flags in arxiv-mcp-improved chat
+- [ ] full documentation update on docs following documentations in `.knowledge_base/folder-organization/workspace-organization-best-practices.md`
+- [ ] update memory-mcp to support dates
+- [ ] what is `ZOD`?
+- [ ] full guide on the steps used in `mcp-deep-code-research` and how to develop good processes for software development.
+- [ ] add `arxiv-mcp-improved` to `mcp-deep-code-research` to analyze the code and suggest improvements.
+- [ ] fix human in the loop mcp to stop using the dumb tool box and use the proper tools in prompt, either by letting me pass the proper inputs inside the chat. it also should work with vscode.
+- [ ] update `tools_and_mcps.md` with `recommended models
+- [ ] Search github repositories focusing on mcps that generate code step by step
+- [ ] Code research on software creation good practices.
+- [ ] create or find an mcp to generate code appropriately.
+- [ ] mcp that breaks and do your prompts step by step.
+  - **Plan how to do the following task step by, selecting correct tools and fallbacks from your tool list.**
+  - Please, search github repositories focusing on mcps that generate code step by step.
+- [ ] deep research on system design, software architectural styles, development methodologies.
+- [ ] multi agent mcp
+- Finish TCC and go back to the html extension
+  - add cool functionalities, similar to `markdown all in one`, but with the other framework of `markdown-extended-extension`.
+
+- [x] add a task for the `user environement setup` to always use `smart_ln -s` when creatinv a repo with `uv`:
+  - add alias to `.bashrc` or `.zshrc`:
+    - `alias ln_tracked='smart_ln -s'`
+  - add a function to create a repo with `uv` and create the symlink for `smart_ln -srv /home/lucas_galdino/

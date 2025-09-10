@@ -1,0 +1,159 @@
+{
+    "research-automation": {
+        "tools": [
+            "arxiv_improved",
+            "mcp_deep-research_deep-research",
+            "mcp_google-schola_search_google_scholar_advanced",
+            "mcp_google-schola_get_author_info",
+            "vscode-websearchforcopilot_webSearch",
+            "semantic_search",
+            "grep_search",
+            "mcp_memory_create_entities",
+            "mcp_memory_add_observations"
+        ],
+        "description": "Next-generation academic research automation with enhanced ArXiv integration, multi-source analysis, and knowledge graph storage",
+        "icon": "search"
+    },
+    "code-analysis": {
+        "tools": [
+            "mcp_github_search_code",
+            "mcp_github_search_repositories",
+            "mcp_deepwiki_ask_question",
+            "mcp_deepwiki_read_wiki_contents",
+            "mcp_deepwiki_read_wiki_structure",
+            "list_code_usages",
+            "get_errors",
+            "mcp_pylance_mcp_s_pylanceRunCodeSnippet",
+            "mcp_pylance_mcp_s_pylanceFileSyntaxErrors",
+            "mcp_pylance_mcp_s_pylanceInvokeRefactoring"
+        ],
+        "description": "Advanced code analysis with GitHub integration, repository exploration, Python analysis, and automated refactoring capabilities",
+        "icon": "code"
+    },
+    "documentation-generation": {
+        "tools": [
+            "create_file",
+            "replace_string_in_file",
+            "mcp_markitdown_convert_to_markdown",
+            "mcp_mcp_pdf_reade_read-pdf",
+            "mcp_mcp_pdf_reade_search-pdf",
+            "semantic_search",
+            "grep_search",
+            "mermaid-diagram-validator",
+            "mermaid-diagram-preview",
+            "get-syntax-docs-mermaid"
+        ],
+        "description": "Complete documentation ecosystem with bulk PDF processing (page ranges), parallel-capable diagram workflows, and automated validation - optimized for high-volume documentation generation with smart resource management",
+        "icon": "book"
+    },
+    "testing-automation": {
+        "tools": [
+            "runTests",
+            "test_failure",
+            "mcp_pylance_mcp_s_pylanceInvokeRefactoring",
+            "mcp_pylance_mcp_s_pylanceFileSyntaxErrors",
+            "mcp_pylance_mcp_s_pylanceSyntaxErrors",
+            "get_errors",
+            "run_notebook_cell",
+            "notebook_install_packages",
+            "install_python_packages",
+            "test_search"
+        ],
+        "description": "Enterprise-grade testing automation with Python quality assurance, notebook testing, and comprehensive error analysis",
+        "icon": "beaker"
+    },
+    "knowledge-management": {
+        "tools": [
+            "mcp_memory_create_entities",
+            "mcp_memory_add_observations",
+            "mcp_memory_create_relations",
+            "mcp_memory_search_nodes",
+            "mcp_memory_read_graph",
+            "mcp_memory_delete_entities",
+            "mcp_memory_delete_relations",
+            "mcp_memory_open_nodes",
+            "semantic_search",
+            "file_search"
+        ],
+        "description": "Advanced knowledge graph management with entity relationships, persistent memory, and intelligent information retrieval",
+        "icon": "database"
+    },
+    "ai-orchestration": {
+        "tools": [
+            "mcp_sequentialthi_sequentialthinking",
+            "mcp_actor-critic-_actor-critic-thinking",
+            "think",
+            "mcp_deep-research_deep-research",
+            "semantic_search",
+            "run_in_terminal",
+            "create_and_run_task",
+            "get_task_output"
+        ],
+        "description": "Sophisticated AI reasoning orchestration with multi-perspective analysis, sequential thinking, and automated workflow execution",
+        "icon": "circuit-board"
+    },
+    "development-workflow": {
+        "tools": [
+            "mcp_github_create_pull_request_with_copilot",
+            "mcp_github_assign_copilot_to_issue",
+            "mcp_github_request_copilot_review",
+            "mcp_github_create_issue",
+            "mcp_github_update_pull_request",
+            "create_and_run_task",
+            "run_in_terminal",
+            "install_extension",
+            "run_vscode_command",
+            "get_changed_files"
+        ],
+        "description": "Complete DevOps lifecycle automation with GitHub Copilot integration, issue management, and continuous integration workflows",
+        "icon": "git-branch"
+    },
+    "data-science": {
+        "tools": [
+            "create_new_jupyter_notebook",
+            "run_notebook_cell",
+            "configure_notebook",
+            "copilot_getNotebookSummary",
+            "edit_notebook_file",
+            "read_notebook_cell_output",
+            "notebook_install_packages",
+            "notebook_list_packages",
+            "mcp_pylance_mcp_s_pylanceRunCodeSnippet",
+            "configure_python_environment",
+            "get_python_environment_details"
+        ],
+        "description": "Comprehensive data science platform with Jupyter integration, environment management, and advanced Python analytics",
+        "icon": "graph"
+    },
+    "security-analysis": {
+        "tools": [
+            "mcp_github_search_code",
+            "get_errors",
+            "mcp_pylance_mcp_s_pylanceFileSyntaxErrors",
+            "mcp_pylance_mcp_s_pylanceInvokeRefactoring",
+            "mcp_pylance_mcp_s_pylanceSettings",
+            "grep_search",
+            "file_search",
+            "run_in_terminal",
+            "get_changed_files"
+        ],
+        "description": "Advanced security analysis with vulnerability detection, code quality assessment, and automated security refactoring",
+        "icon": "shield"
+    },
+    "project-management": {
+        "tools": [
+            "mcp_github_create_issue",
+            "mcp_github_assign_copilot_to_issue",
+            "create_new_workspace",
+            "get_project_setup_info",
+            "create_file",
+            "create_directory",
+            "file_search",
+            "list_dir",
+            "create_and_run_task",
+            "vscode_searchExtensions_internal"
+        ],
+        "description": "Enterprise project management with workspace automation, GitHub integration, and intelligent project setup workflows",
+        "icon": "project"
+    }
+}
