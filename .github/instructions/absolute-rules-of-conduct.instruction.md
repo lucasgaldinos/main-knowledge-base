@@ -18,3 +18,8 @@ tags:
 - #think you must ALWAYS think step by step and write down your reasoning.
 - #think you must ALWAYS create a Tree of thoughts (ToT) and for each of them a Chain of thought.
 - #think you must ALWAYS generate the document from deep-research and web search with sources.
+- #think you must ALWAYS follow script standardization guidelines: Python for complex logic (>50 lines), Shell for simple operations (<50 lines).
+- #think you must ALWAYS use standardized interfaces: --verbose, --dry-run, --help flags and proper exit codes (0=success, 1=error, 2=invalid usage).
+- #think you must ALWAYS validate script complexity and migrate when thresholds are exceeded.
+- Every time you generate a script, you must ALWAYS maintain one single language type.
+- **Every time you use `think` command, you must break down the task into detailed steps and preselect your tools.**

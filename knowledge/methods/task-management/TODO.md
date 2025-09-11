@@ -17,6 +17,7 @@ version: 1.0.0
 title: ## High Priority Tasks
 
 ### IN PROGRESS ⏳
+
 - [x] **Tool Reference & Toolset Enhancement** ✅ COMPLETED 2025-09-10
   - [x] Create comprehensive 1NF tool table with all available tools ✅
   - [x] Add 4 new categories: AI Reasoning & Analysis, Diagram & Visualization, Document Processing, Workspace Management ✅
@@ -25,6 +26,7 @@ title: ## High Priority Tasks
   - [x] Add usage examples, best practices, and workflow patterns ✅
 
 ### PENDING 📋 and Priorities
+
 description: Detailed task list with priorities and implementation notes
 status: active
 created: 2025-09-10
@@ -44,16 +46,20 @@ tags: [todo, tasks, priorities, implementation]
   - Create usage examples for every available tool
   - **Status: IN PROGRESS - Phase 1 starting**
 
-- [ ] HIGH search for how to do proper instructions for copilot
-  - /home/lucas_galdino/repositories/mcp_servers/arxiv-mcp-improved/.github/.knowledge_base/vscode_copilot_customization/2-custom_instructions_examples.md
-- [ ] HIGH search for what are the required documents, guides, references and decisions for a good documentation.
-  - make a deep research on documentation best practices.
-    - what are "pluses" in documentation?
-    - documenting with sphynx similar to tsblip95.docs
-- [ ] HIGH search for what are the testing best practices.
-  - make a deep research on testing best practices.
-  - tokenBudget 50000 - temperature 0.2
-  - how to automatically check things e.g using (black, ruff, pylance, pydantic etc.)
+- [x] ✅ **COMPLETED: VS Code Copilot Instructions Guide** 2025-09-10
+  - Created comprehensive guide for GitHub Copilot custom instructions
+  - Includes best practices, configuration examples, and advanced usage patterns
+  - Located: `knowledge/methods/vscode-copilot-instructions-guide.md`
+- [x] ✅ **COMPLETED: Documentation Best Practices Research** 2025-09-10
+  - Deep research on documentation best practices and standards
+  - Comprehensive guide covering Sphinx, frameworks, architecture
+  - Includes implementation roadmap and measurement strategies
+  - Located: `knowledge/methods/documentation-best-practices-comprehensive.md`
+- [x] ✅ **COMPLETED: Testing Best Practices Research** 2025-09-10
+  - Deep research on testing best practices using 50k token budget
+  - Comprehensive guide covering Python (pytest, Ruff, Black, Pylance, Pydantic) and JavaScript (Vitest, Jest, Playwright)
+  - Includes VS Code integration, automation frameworks, security testing, and 4-phase implementation roadmap
+  - Located: `knowledge/methods/testing-comprehensive-guide.md`
 - [ ] HIGH search for what are the best practices for testing with vscode (JS focused), how to automate testing with vscode.
   - make a deep research on testing best practices with vscode.
   - tokenBudget 50000 - temperature 0.2
