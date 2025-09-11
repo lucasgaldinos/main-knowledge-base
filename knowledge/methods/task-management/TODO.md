@@ -55,12 +55,25 @@ tags: [todo, tasks, priorities, implementation]
   - Comprehensive guide covering Sphinx, frameworks, architecture
   - Includes implementation roadmap and measurement strategies
   - Located: `knowledge/methods/documentation-best-practices-comprehensive.md`
+- [x] ✅ **COMPLETED: Custom Toolset Configuration Optimization** 2025-09-10  
+  - Fixed non-existent "arxiv_improved" tool references
+  - Added complete ArXiv MCP server integration (`mcp_arxiv-mcp-ser_*` tools)
+  - Enhanced all 10 toolsets with 23 new tool integrations
+  - Aligned configurations with academic research workflows
+  - Located: `projects/completed/custom-toolset-optimization-completion-report.md`
+- [ ] 🔧 **IN PROGRESS: VS Code Workspace Configuration Resolution** 2025-09-11
+  - **Issue**: Workspace-level toolsets partially working vs profile-level toolsets
+  - **Root Cause Identified**: Empty markdown files causing git reference errors + configuration precedence issues
+  - **Phase 1**: ✅ Created comprehensive .gitignore, identified 8+ empty files
+  - **Phase 2**: 🔄 Content recovery for empty files using conversation history
+  - **Phase 3**: ⏳ Workspace vs profile toolset configuration optimization
+  - **Phase 4**: ⏳ Prevention scripts and validation automation
+  - **Files Affected**: `system-design-and-software-patterns-guide.md`, `arxiv-mcp-*.md`, `mcp_servers_guide/*`
 - [x] ✅ **COMPLETED: Testing Best Practices Research** 2025-09-10
   - Deep research on testing best practices using 50k token budget
   - Comprehensive guide covering Python (pytest, Ruff, Black, Pylance, Pydantic) and JavaScript (Vitest, Jest, Playwright)
   - Includes VS Code integration, automation frameworks, security testing, and 4-phase implementation roadmap
   - Located: `knowledge/methods/testing-comprehensive-guide.md`
-- [ ] HIGH search for what are the best practices for testing with vscode (JS focused), how to automate testing with vscode.
   - make a deep research on testing best practices with vscode.
   - tokenBudget 50000 - temperature 0.2
 - [ ] HIGH Search and register how to use vscode toolsets effectively. Create a search plan for that.
@@ -68,7 +81,7 @@ tags: [todo, tasks, priorities, implementation]
 - [ ] HIGH how to create an mcp that does specific step by step processes or how to combine mcps: arxiv-mcp-improved + deep-research + deep code research on a repository.
   - example deep-code-research, deep-research and arxiv-mcp, maybe using langchain.
   - parallel processes/agents are also important
-- [ ] MEDIUM deep-research secifically fo vscode update docs. Currently, it's separated by date, but I want it to be separated by topics. Input it into `docs/{vscode_docs_folder}/`. Use gemini-2.5-pro due to higher context.
+- [ ] ULTRA HIGH deep-research secifically fo vscode update docs. Currently, it's separated by date, but I want it to be separated by topics. Input it into `docs/{vscode_docs_folder}/`. Use gemini-2.5-pro due to higher context.
   - REF:
     1. <https://code.visualstudio.com/updates/>
 
@@ -78,7 +91,7 @@ tags: [todo, tasks, priorities, implementation]
   2. for prompts
   3. for agent toolsets
   4. for mcp configurations and servers, specifically following vscode github copilots.
-
+- [ ] ULTRA HIGH `deep-research` on how to automate task creation (JIRA mcp/extension or github actions. Ideally both).
 - [ ] add `mcp-deep-code-research` to `arxiv-mcp-improved` to analyze the code and suggest improvements.
 - [ ] add `yaml` proper tags to all `.md` files.
 - [ ] `python-testing-guide.md` needs proper formatting, specially for formulas.

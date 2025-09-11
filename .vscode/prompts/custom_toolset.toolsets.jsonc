@@ -1,7 +1,10 @@
 {
     "research-automation": {
         "tools": [
-            "arxiv_improved",
+            "mcp_arxiv-mcp-ser_search_arxiv",
+            "mcp_arxiv-mcp-ser_get_details",
+            "mcp_arxiv-mcp-ser_load_article_to_context",
+            "mcp_arxiv-mcp-ser_download_article",
             "mcp_deep-research_deep-research",
             "mcp_google-schola_search_google_scholar_advanced",
             "mcp_google-schola_get_author_info",
@@ -9,9 +12,10 @@
             "semantic_search",
             "grep_search",
             "mcp_memory_create_entities",
-            "mcp_memory_add_observations"
+            "mcp_memory_add_observations",
+            "fetch_webpage"
         ],
-        "description": "Next-generation academic research automation with enhanced ArXiv integration, multi-source analysis, and knowledge graph storage",
+        "description": "Comprehensive academic research automation with ArXiv integration, Google Scholar access, deep research capabilities, and knowledge graph management for systematic literature discovery and analysis",
         "icon": "search"
     },
     "code-analysis": {
@@ -25,9 +29,14 @@
             "get_errors",
             "mcp_pylance_mcp_s_pylanceRunCodeSnippet",
             "mcp_pylance_mcp_s_pylanceFileSyntaxErrors",
-            "mcp_pylance_mcp_s_pylanceInvokeRefactoring"
+            "mcp_pylance_mcp_s_pylanceInvokeRefactoring",
+            "mcp_pylance_mcp_s_pylanceWorkspaceUserFiles",
+            "mcp_pylance_mcp_s_pylanceImports",
+            "mcp_pylance_mcp_s_pylanceInstalledTopLevelModules",
+            "semantic_search",
+            "grep_search"
         ],
-        "description": "Advanced code analysis with GitHub integration, repository exploration, Python analysis, and automated refactoring capabilities",
+        "description": "Advanced code analysis with GitHub integration, repository exploration, comprehensive Python analysis via Pylance, automated refactoring, import analysis, and deep repository understanding for academic software projects",
         "icon": "code"
     },
     "documentation-generation": {
@@ -37,29 +46,37 @@
             "mcp_markitdown_convert_to_markdown",
             "mcp_mcp_pdf_reade_read-pdf",
             "mcp_mcp_pdf_reade_search-pdf",
+            "mcp_mcp_pdf_reade_pdf-metadata",
             "semantic_search",
             "grep_search",
             "mermaid-diagram-validator",
             "mermaid-diagram-preview",
-            "get-syntax-docs-mermaid"
+            "get-syntax-docs-mermaid",
+            "create_directory",
+            "list_dir",
+            "file_search"
         ],
-        "description": "Complete documentation ecosystem with PDF processing, markdown conversion, diagram generation, and automated validation workflows",
+        "description": "Complete documentation ecosystem with PDF processing, markdown conversion, Mermaid diagram generation and validation, automated content discovery, and academic documentation standards with citation-aware workflows",
         "icon": "book"
     },
     "testing-automation": {
         "tools": [
             "runTests",
             "test_failure",
+            "test_search",
             "mcp_pylance_mcp_s_pylanceInvokeRefactoring",
             "mcp_pylance_mcp_s_pylanceFileSyntaxErrors",
             "mcp_pylance_mcp_s_pylanceSyntaxErrors",
+            "mcp_pylance_mcp_s_pylanceRunCodeSnippet",
+            "mcp_pylance_mcp_s_pylanceSettings",
             "get_errors",
             "run_notebook_cell",
             "notebook_install_packages",
             "install_python_packages",
-            "test_search"
+            "configure_python_environment",
+            "get_python_environment_details"
         ],
-        "description": "Enterprise-grade testing automation with Python quality assurance, notebook testing, and comprehensive error analysis",
+        "description": "Enterprise-grade testing automation with pytest framework integration, Python quality assurance via Ruff/Black/Pylance, notebook testing, syntax validation, and comprehensive error analysis aligned with academic testing standards",
         "icon": "beaker"
     },
     "knowledge-management": {
@@ -120,9 +137,13 @@
             "notebook_list_packages",
             "mcp_pylance_mcp_s_pylanceRunCodeSnippet",
             "configure_python_environment",
-            "get_python_environment_details"
+            "get_python_environment_details",
+            "get_python_executable_details",
+            "mcp_pylance_mcp_s_pylancePythonEnvironments",
+            "mcp_pylance_mcp_s_pylanceUpdatePythonEnvironment",
+            "install_python_packages"
         ],
-        "description": "Comprehensive data science platform with Jupyter integration, environment management, and advanced Python analytics",
+        "description": "Comprehensive data science platform with Jupyter integration, Python environment management, notebook automation, and advanced analytics capabilities optimized for academic research workflows and reproducible science",
         "icon": "graph"
     },
     "security-analysis": {
@@ -132,18 +153,23 @@
             "mcp_pylance_mcp_s_pylanceFileSyntaxErrors",
             "mcp_pylance_mcp_s_pylanceInvokeRefactoring",
             "mcp_pylance_mcp_s_pylanceSettings",
+            "mcp_pylance_mcp_s_pylanceWorkspaceUserFiles",
+            "mcp_pylance_mcp_s_pylanceImports",
             "grep_search",
             "file_search",
             "run_in_terminal",
-            "get_changed_files"
+            "get_changed_files",
+            "semantic_search",
+            "list_code_usages"
         ],
-        "description": "Advanced security analysis with vulnerability detection, code quality assessment, and automated security refactoring",
+        "description": "Advanced security analysis with vulnerability detection, code quality assessment, dependency analysis, automated security refactoring, and academic-grade code integrity verification with comprehensive audit trails",
         "icon": "shield"
     },
     "project-management": {
         "tools": [
             "mcp_github_create_issue",
             "mcp_github_assign_copilot_to_issue",
+            "mcp_github_update_pull_request",
             "create_new_workspace",
             "get_project_setup_info",
             "create_file",
@@ -151,9 +177,14 @@
             "file_search",
             "list_dir",
             "create_and_run_task",
-            "vscode_searchExtensions_internal"
+            "get_task_output",
+            "vscode_searchExtensions_internal",
+            "install_extension",
+            "run_vscode_command",
+            "semantic_search",
+            "grep_search"
         ],
-        "description": "Enterprise project management with workspace automation, GitHub integration, and intelligent project setup workflows",
+        "description": "Enterprise project management with workspace automation, GitHub integration, intelligent project setup workflows, task automation, and academic project governance with comprehensive tooling discovery and configuration",
         "icon": "project"
     }
 }
