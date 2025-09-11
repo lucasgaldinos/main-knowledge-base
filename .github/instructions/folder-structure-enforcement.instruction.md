@@ -5,14 +5,14 @@ description: Enforce academic folder structure and organization rules for AI kno
 title: Folder Structure Enforcement Instruction
 status: active
 created: '2025-09-10'
-updated: '2025-09-10'
+updated: '2025-09-11'
 tags:
 - .github
 - instructions
 - folder-structure
 - academic-organization
 - governance
-version: 1.0.0
+version: 1.1.0
 authors:
 - lucas_galdino
 citations: []
@@ -22,7 +22,16 @@ citations: []
 
 # Folder Structure Enforcement Rules
 
-## 🏗️ Academic Directory Structure
+## � RECENT UPDATES (2025-09-11)
+
+### ✅ Workspace Reorganization Completed
+- **TODO.md** and **TASKS.md** moved to root level for operational efficiency
+- **current-work/** directory created for active development files
+- Kebab-case naming enforced: `mcp_servers_guide` → `mcp-servers-guide`
+- Completion reports moved to `projects/completed/`
+- Research literature moved to `resources/literature/`
+
+## �🏗️ Academic Directory Structure
 
 ### **ROOT LEVEL MANDATORY STRUCTURE**
 
@@ -30,12 +39,16 @@ citations: []
 /
 ├── .github/          # GitHub configuration, workflows, instructions (ROOT ONLY)
 ├── .vscode/          # VS Code settings and configuration (ROOT ONLY)
+├── TODO.md           # Operational task management (ROOT LEVEL)
+├── TASKS.md          # Task analysis and planning (ROOT LEVEL)
+├── current-work/     # Active development and work-in-progress files
 ├── knowledge/        # Academic knowledge repository
 ├── projects/         # Project lifecycle management
 ├── resources/        # Supporting materials and references
 ├── infrastructure/   # Scripts, automation, and maintenance tools
 ├── outputs/          # Generated content and publications
 ├── database/         # SQLite databases for persistent storage
+├── mcp-servers-guide/ # MCP server documentation (kebab-case)
 ├── GOVERNANCE.md     # Academic governance framework
 ├── CITATION.cff      # Academic citation standards
 └── README.md         # Primary documentation

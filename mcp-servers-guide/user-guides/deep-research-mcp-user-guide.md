@@ -301,6 +301,7 @@ graph TD
 #### Step-by-Step Process
 
 **Step 1: Initial Research Query**
+
 ```markdown
 **Query Template:**
 "Conduct comprehensive research on [TOPIC] focusing on [SPECIFIC_ASPECTS]. Include recent developments from [TIME_PERIOD] and identify key methodological approaches, findings, and research gaps."
@@ -310,18 +311,21 @@ graph TD
 ```
 
 **Step 2: Source Validation and Expansion**
+
 ```markdown
 **Follow-up Query:**
 "Validate the findings from the previous research by cross-referencing with peer-reviewed journals and conference proceedings. Expand the search to include preprints and technical reports from major research institutions."
 ```
 
 **Step 3: Comparative Analysis**
+
 ```markdown
 **Analysis Query:**
 "Compare and contrast the different approaches identified in the research. Create a detailed comparison matrix including advantages, disadvantages, performance metrics, and practical applicability."
 ```
 
 **Step 4: Research Gap Identification**
+
 ```markdown
 **Gap Analysis Query:**
 "Based on the comprehensive research conducted, identify specific research gaps, understudied areas, and opportunities for future investigation. Categorize gaps by methodology, application domain, and theoretical frameworks."

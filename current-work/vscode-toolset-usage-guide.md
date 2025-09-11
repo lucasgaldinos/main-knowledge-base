@@ -136,6 +136,7 @@ graph TD
 **Primary Purpose**: Comprehensive academic research automation with multi-source discovery and analysis.
 
 #### Core Tools
+
 - `mcp_arxiv-mcp-ser_search_arxiv`: Academic paper search
 - `mcp_deep-research_deep-research`: Comprehensive research reports
 - `mcp_google-schola_search_google_scholar_advanced`: Scholarly search
@@ -156,6 +157,7 @@ graph TD
 ```
 
 #### Best Practices
+
 1. **Start Broad**: Begin with general ArXiv searches
 2. **Go Deep**: Use deep research for comprehensive analysis
 3. **Store Knowledge**: Create memory entities for important findings
@@ -166,6 +168,7 @@ graph TD
 **Primary Purpose**: Advanced code analysis with repository exploration and quality assessment.
 
 #### Core Tools
+
 - `mcp_pylance_mcp_s_pylanceRunCodeSnippet`: Python code execution
 - `mcp_pylance_mcp_s_pylanceFileSyntaxErrors`: Syntax validation
 - `list_code_usages`: Symbol usage analysis
@@ -187,13 +190,17 @@ def process_data(data):
             result.append(item * 2)
     return result
 ```
+
 """
 
 # Syntax validation
+
 "Check the syntax of the Python files in the current workspace"
 
 # Usage analysis
+
 "Find all usages of the 'process_data' function across the codebase"
+
 ```
 
 #### Best Practices
@@ -229,6 +236,7 @@ graph TD
 
 **Convert Content:**
 "Convert the PDF technical specification to markdown format"
+
 ```
 
 #### Best Practices
@@ -262,6 +270,7 @@ graph TD
 ```
 
 #### Best Practices
+
 1. **Continuous Testing**: Run tests frequently during development
 2. **Environment Isolation**: Use proper environment configuration
 3. **Coverage Monitoring**: Track test coverage metrics
@@ -272,6 +281,7 @@ graph TD
 **Primary Purpose**: Advanced knowledge graph management with persistent memory and intelligent retrieval.
 
 #### Core Tools
+
 - `mcp_memory_create_entities`: Create knowledge entities
 - `mcp_memory_add_observations`: Add information to entities
 - `mcp_memory_create_relations`: Establish relationships
@@ -292,6 +302,7 @@ graph TD
 ```
 
 #### Best Practices
+
 1. **Structured Entities**: Create well-defined knowledge entities
 2. **Rich Observations**: Add detailed observations with context
 3. **Meaningful Relations**: Establish logical relationships
@@ -302,6 +313,7 @@ graph TD
 **Primary Purpose**: Sophisticated AI reasoning orchestration with multi-perspective analysis.
 
 #### Core Tools
+
 - `mcp_sequentialthi_sequentialthinking`: Sequential reasoning
 - `mcp_actor-critic-_actor-critic-thinking`: Multi-perspective analysis
 - `think`: Deep thinking processes
@@ -321,6 +333,7 @@ graph TD
 ```
 
 #### Best Practices
+
 1. **Problem Decomposition**: Break complex problems into steps
 2. **Multi-Perspective**: Use actor-critic for balanced analysis
 3. **Iterative Refinement**: Build on previous thoughts
@@ -331,6 +344,7 @@ graph TD
 **Primary Purpose**: Complete DevOps lifecycle automation with GitHub integration.
 
 #### Core Tools
+
 - `run_in_terminal`: Execute commands
 - `create_and_run_task`: Task automation
 - `get_changed_files`: Git change analysis
@@ -350,6 +364,7 @@ graph TD
 ```
 
 #### Best Practices
+
 1. **Automated Workflows**: Use task automation for repetitive operations
 2. **Git Integration**: Leverage git change tracking
 3. **Extension Management**: Keep development tools current
@@ -360,6 +375,7 @@ graph TD
 **Primary Purpose**: Comprehensive data science platform with Jupyter integration and Python environment management.
 
 #### Core Tools
+
 - `create_new_jupyter_notebook`: Create notebooks
 - `run_notebook_cell`: Execute notebook cells
 - `configure_python_environment`: Environment setup
@@ -380,6 +396,7 @@ graph TD
 ```
 
 #### Best Practices
+
 1. **Environment Isolation**: Use dedicated environments for projects
 2. **Reproducible Analysis**: Document analysis steps clearly
 3. **Package Management**: Track dependencies systematically
@@ -390,6 +407,7 @@ graph TD
 **Primary Purpose**: Advanced security analysis with vulnerability detection and audit capabilities.
 
 #### Core Tools
+
 - `get_errors`: Error detection
 - `mcp_pylance_mcp_s_pylanceFileSyntaxErrors`: Syntax validation
 - `semantic_search`: Security pattern discovery
@@ -410,6 +428,7 @@ graph TD
 ```
 
 #### Best Practices
+
 1. **Regular Scanning**: Perform security analysis regularly
 2. **Dependency Tracking**: Monitor third-party dependencies
 3. **Syntax Validation**: Maintain clean, error-free code
@@ -420,6 +439,7 @@ graph TD
 **Primary Purpose**: Enterprise project management with workspace automation and comprehensive tooling.
 
 #### Core Tools
+
 - `create_new_workspace`: Workspace creation
 - `get_project_setup_info`: Project configuration
 - `create_file`: File management
@@ -440,6 +460,7 @@ graph TD
 ```
 
 #### Best Practices
+
 1. **Structured Setup**: Use consistent project structures
 2. **Tool Integration**: Leverage appropriate extensions
 3. **Documentation Standards**: Maintain project documentation
@@ -609,6 +630,7 @@ async function comprehensiveAnalysis(topic) {
 **Symptoms**: Toolset not appearing in VS Code Copilot interface
 
 **Diagnostic Steps**:
+
 ```bash
 # Check configuration file
 cat .vscode/prompts/custom_toolset.toolsets.jsonc
@@ -618,6 +640,7 @@ python -m json.tool .vscode/prompts/custom_toolset.toolsets.jsonc
 ```
 
 **Solutions**:
+
 1. **Syntax Error**: Fix JSON syntax in configuration file
 2. **File Location**: Ensure file is in correct path
 3. **VS Code Restart**: Reload VS Code window
@@ -628,6 +651,7 @@ python -m json.tool .vscode/prompts/custom_toolset.toolsets.jsonc
 **Symptoms**: MCP tools not responding or showing errors
 
 **Diagnostic Steps**:
+
 ```bash
 # Check MCP server status
 ps aux | grep mcp
@@ -637,6 +661,7 @@ curl -I http://localhost:8000  # Adjust port as needed
 ```
 
 **Solutions**:
+
 1. **Server Restart**: Restart MCP servers
 2. **Port Conflicts**: Check for port conflicts
 3. **Authentication**: Verify API keys and credentials
@@ -647,11 +672,13 @@ curl -I http://localhost:8000  # Adjust port as needed
 **Symptoms**: Tools timing out or not completing operations
 
 **Diagnostic Steps**:
+
 - Monitor system resources (CPU, memory)
 - Check network latency for external services
 - Review operation complexity and scope
 
 **Solutions**:
+
 1. **Reduce Scope**: Limit operation scope for large tasks
 2. **Increase Timeout**: Adjust timeout settings if configurable
 3. **Resource Optimization**: Close unnecessary applications
@@ -662,6 +689,7 @@ curl -I http://localhost:8000  # Adjust port as needed
 **Symptoms**: Pylance tools not working or wrong Python version
 
 **Diagnostic Steps**:
+
 ```bash
 # Check Python environment
 which python
@@ -672,6 +700,7 @@ code --list-extensions | grep python
 ```
 
 **Solutions**:
+
 1. **Environment Selection**: Select correct Python interpreter in VS Code
 2. **Path Configuration**: Update Python path in VS Code settings
 3. **Extension Installation**: Install/update Python extension

@@ -97,6 +97,7 @@ Core_Strengths:
 ```
 
 **Use Case Optimization:**
+
 - **Literature Reviews**: Excellent for comprehensive literature discovery
 - **Research Proposals**: Strong for identifying research gaps and trends
 - **Competitive Analysis**: Outstanding for market and technology research
@@ -141,6 +142,7 @@ Core_Strengths:
 ```
 
 **Use Case Optimization:**
+
 - **STEM Research**: Exceptional for physics, math, CS, and engineering
 - **Paper Discovery**: Fastest for known domain research
 - **Citation Analysis**: Strong for reference management
@@ -185,6 +187,7 @@ Core_Strengths:
 ```
 
 **Use Case Optimization:**
+
 - **Cross-Disciplinary Research**: Excellent breadth across all fields
 - **Citation Metrics**: Strong for impact assessment
 - **Author Research**: Good for researcher profiling
