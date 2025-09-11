@@ -67,23 +67,24 @@ citations: []
 ## 🔧 AUTOMATED ENFORCEMENT SYSTEM
 
 ### Pre-commit Hooks (`.pre-commit-config.yaml`)
+
 - **Structure Validation**: Enforces directory organization and required files
 - **Metadata Validation**: JSON schema validation for YAML frontmatter
 - **Filename Policy**: Consistent naming conventions and character restrictions
 - **Content Quality**: Markdown linting, spell checking, security scanning
 
 ### Governance Framework (`.kb/policy/kb-policy.yaml`)
+
 - **Path Rules**: Directory-specific policies and requirements
 - **Naming Conventions**: Flexible enforcement accommodating existing content
 - **Controlled Vocabularies**: Standardized tags, status values, license identifiers
 - **File Policies**: Size limits, extension validation, Git LFS configuration
 
 ### Validation Scripts
+
 - `validate_structure.py`: Directory structure and required file checking
 - `validate_metadata.py`: YAML frontmatter and JSON schema validation
 - `check_filenames.py`: Naming convention and character policy enforcement
-
-
 
 # Folder Structure Enforcement Rules
 

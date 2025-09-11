@@ -19,6 +19,7 @@ This guide provides comprehensive instructions for migrating content to the acad
 ### Planning a Migration
 
 #### 1. Assessment Phase
+
 ```bash
 # Analyze current structure
 find . -type f -name "*.md" | wc -l
@@ -32,6 +33,7 @@ grep -r "^---" . --include="*.md" | wc -l
 ```
 
 #### 2. Categorization Matrix
+
 ```
 Content Type           → Target Location
 ─────────────────────────────────────────
@@ -56,6 +58,7 @@ Deprecated content    → 90-archive/
 ### Migration Execution
 
 #### 1. Preparation Steps
+
 ```bash
 # Create backup
 git add -A && git commit -m "Pre-migration backup"
@@ -68,6 +71,7 @@ cp -r .kb/ ./ # If not already present
 ```
 
 #### 2. Content Migration Commands
+
 ```bash
 # Preserve Git history with git mv
 git mv old-directory/ 10-knowledge/category/
@@ -84,6 +88,7 @@ git mv data/* 30-data/
 ```
 
 #### 3. Post-Migration Validation
+
 ```bash
 # Run all validation scripts
 python3 .kb/scripts/validate_structure.py
@@ -100,6 +105,7 @@ grep -r "\[.*\](.*/" . --include="*.md"
 ### YAML Frontmatter Migration
 
 #### 1. Automated Frontmatter Addition
+
 ```python
 # Use the frontmatter enforcer
 python3 40-code/organization/yaml-frontmatter-enforcer.py --scan
@@ -107,6 +113,7 @@ python3 40-code/organization/yaml-frontmatter-enforcer.py --fix
 ```
 
 #### 2. Manual Frontmatter Template
+
 ```yaml
 ---
 title: [Document Title]
@@ -126,6 +133,7 @@ citations: [cite1, cite2]
 ### Routine Tasks
 
 #### 1. Weekly Validation
+
 ```bash
 #!/bin/bash
 # Weekly maintenance script
@@ -152,6 +160,7 @@ echo "Maintenance complete!"
 ```
 
 #### 2. Content Lifecycle Management
+
 ```bash
 # Find outdated content
 find . -name "*.md" -mtime +365 | head -10
@@ -168,6 +177,7 @@ find 20-projects/completed/ -name "*.md" -mtime +365
 ### Content Quality Assurance
 
 #### 1. Metadata Consistency
+
 ```bash
 # Check for missing titles
 grep -L "title:" $(find . -name "*.md")
@@ -180,6 +190,7 @@ grep -h "status:" $(find . -name "*.md") | sort | uniq -c
 ```
 
 #### 2. Link Validation
+
 ```bash
 # Find broken internal links
 grep -r "\[.*\](.*\.md)" . --include="*.md" | \
@@ -197,6 +208,7 @@ grep -r "\[.*\](.*\.md)" . --include="*.md" | \
 ### Database Maintenance
 
 #### 1. Knowledge Database Updates
+
 ```python
 # Update knowledge database
 import sqlite3
@@ -220,6 +232,7 @@ def update_knowledge_db():
 ```
 
 #### 2. Citation Management
+
 ```bash
 # Update bibliography
 bibtex 10-knowledge/literature/library.bib
@@ -233,6 +246,7 @@ grep -r "@[a-zA-Z]" . --include="*.md" | \
 ### Automated Workflows
 
 #### 1. Git Hooks Setup
+
 ```bash
 # Install pre-commit hooks
 cp .kb/scripts/pre-commit.sh .git/hooks/pre-commit
@@ -244,6 +258,7 @@ chmod +x .git/hooks/pre-push
 ```
 
 #### 2. Continuous Integration
+
 ```yaml
 # .github/workflows/validation.yml
 name: Knowledge Base Validation
@@ -272,6 +287,7 @@ jobs:
 ### Framework Updates
 
 #### 1. Policy Evolution
+
 ```yaml
 # Update .kb/policy/kb-policy.yaml
 version: "2.1.0"
@@ -283,6 +299,7 @@ changes:
 ```
 
 #### 2. Schema Updates
+
 ```json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
@@ -302,6 +319,7 @@ changes:
 ### Performance Optimization
 
 #### 1. Search Indexing
+
 ```bash
 # Create search index
 find . -name "*.md" -exec grep -l "tag" {} \; | \
@@ -312,6 +330,7 @@ find . -name "*.md" -exec grep -l "tag" {} \; | \
 ```
 
 #### 2. Content Analytics
+
 ```python
 # Generate usage statistics
 import os
@@ -340,6 +359,7 @@ def analyze_content():
 ### Common Issues
 
 #### 1. Validation Failures
+
 ```bash
 # Structure issues
 python3 .kb/scripts/validate_structure.py --verbose
@@ -352,6 +372,7 @@ python3 .kb/scripts/check_filenames.py --auto-rename
 ```
 
 #### 2. Performance Problems
+
 ```bash
 # Large file detection
 find . -name "*.md" -size +1M
@@ -367,6 +388,7 @@ find . -name "*.md" ! -path "./.git/*" ! -path "./.kb/*" | \
 ### Recovery Procedures
 
 #### 1. Structure Recovery
+
 ```bash
 # Reset to last good state
 git log --oneline -10
@@ -380,6 +402,7 @@ python3 .kb/scripts/validate_structure.py
 ```
 
 #### 2. Data Recovery
+
 ```bash
 # Backup restoration
 cp -r backup/ .
@@ -396,12 +419,14 @@ python3 40-code/rebuild_indexes.py
 ### Keeping Documentation Current
 
 #### 1. Regular Reviews
+
 - Monthly policy review
 - Quarterly framework assessment
 - Annual major updates
 - User feedback integration
 
 #### 2. Version Management
+
 ```bash
 # Document version updates
 git tag -a v2.1.0 -m "Framework update with enhanced automation"

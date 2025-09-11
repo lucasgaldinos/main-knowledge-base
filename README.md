@@ -1,18 +1,18 @@
 ---
 title: AI Knowledge Base - Academic Research Platform
 description: Comprehensive knowledge base with academic research focus, database integration, and intelligent automation for AI agent workflows
-version: 1.0.0
+version: 1.1.0
 status: published
 created: 2025-09-10
-updated: 2025-09-10
+updated: 2025-09-11
 authors: [lucas_galdino]
-tags: [ai, knowledge-base, academic-research, database-integration, automation, mcp, sqlite]
+tags: [ai, knowledge-base, academic-research, database-integration, automation, mcp, sqlite, vscode-terminal]
 project_type: academic-research-platform
 methodology: hybrid-academic-operational
 database_refs:
   knowledge_id: "kb_main_001"
   citation_ids: []
-  related_projects: ["tools-reference-enhancement", "academic-workflow-optimization"]
+  related_projects: ["tools-reference-enhancement", "academic-workflow-optimization", "vscode-terminal-automation"]
 ---
 
 # Academic AI Knowledge Base
@@ -48,6 +48,15 @@ A professionally organized, academically structured repository for artificial in
 - **Validation scripts** check structure, metadata, and naming conventions  
 - **JSON schemas** enforce consistent content metadata
 - **Policy framework** guides organizational decisions
+
+## 🆕 Recent Updates (2025-09-11)
+
+### VS Code Terminal Integration
+
+- **Comprehensive automation guide**: Added `10-knowledge/methods/vscode-integrated-terminal-automation-guide.md`
+- **Enhanced settings**: Updated `.vscode/settings.json` with automation-focused terminal profiles
+- **Quick reference**: Created `80-resources/tools/vscode-terminal-quick-reference.md`
+- **Shell integration**: Configured advanced terminal features for development workflow optimization
 
 ## 📚 Key Resources
 

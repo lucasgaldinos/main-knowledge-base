@@ -33,18 +33,22 @@ Welcome to the Academic Knowledge Base Organization System! This guide will help
 ## Core Principles
 
 ### 1. Academic Taxonomy (00-90 Structure)
+
 Our organization follows research-based taxonomy principles:
+
 - **Logical progression** from administrative (00) to archival (90)
 - **Clear separation** of content types and lifecycle stages
 - **Scalable structure** that grows with your research needs
 
 ### 2. FAIR Data Principles
+
 - **Findable**: Clear naming conventions and metadata
 - **Accessible**: Open formats and documented structures
 - **Interoperable**: Standard schemas and cross-references
 - **Reusable**: Templates and best practices documentation
 
 ### 3. Automated Governance
+
 - **Pre-commit hooks** ensure compliance
 - **Validation scripts** check structure and metadata
 - **JSON schemas** enforce consistency
@@ -55,6 +59,7 @@ Our organization follows research-based taxonomy principles:
 ### Adding New Content
 
 #### 1. Determine Content Category
+
 ```
 Research notes       → 10-knowledge/notes/
 Methodologies       → 10-knowledge/methods/
@@ -72,6 +77,7 @@ Legacy content     → 90-archive/
 ```
 
 #### 2. Use Proper YAML Frontmatter
+
 ```yaml
 ---
 title: [Descriptive Title]
@@ -85,6 +91,7 @@ version: [X.Y.Z]
 ```
 
 #### 3. Follow Naming Conventions
+
 - Use kebab-case for files: `my-research-paper.md`
 - Use descriptive names: `mcp-server-integration-guide.md`
 - Avoid special characters except hyphens and underscores
@@ -93,12 +100,14 @@ version: [X.Y.Z]
 ### Project Lifecycle Management
 
 #### Starting a New Project
+
 1. Create project directory in `20-projects/active/`
 2. Add project metadata using project schema
 3. Document objectives, timeline, and deliverables
 4. Track progress through regular updates
 
 #### Completing a Project
+
 1. Finalize all deliverables
 2. Create completion report
 3. Move to `20-projects/completed/`
@@ -108,18 +117,21 @@ version: [X.Y.Z]
 ### Knowledge Management
 
 #### Research Notes (Zettelkasten Style)
+
 - Place atomic notes in `10-knowledge/notes/`
 - Use descriptive titles and comprehensive tags
 - Link between related concepts
 - Follow consistent metadata structure
 
 #### Methodologies and Processes
+
 - Document in `10-knowledge/methods/`
 - Include step-by-step instructions
 - Provide examples and use cases
 - Link to relevant tools and resources
 
 #### Literature and References
+
 - Store in `10-knowledge/literature/`
 - Maintain `library.bib` for citations
 - Include brief summaries and key insights
@@ -128,6 +140,7 @@ version: [X.Y.Z]
 ## Validation and Compliance
 
 ### Running Validation Scripts
+
 ```bash
 # Structure validation
 python3 .kb/scripts/validate_structure.py
@@ -140,7 +153,9 @@ python3 .kb/scripts/check_filenames.py
 ```
 
 ### Pre-commit Hooks
+
 The system automatically validates:
+
 - Directory structure compliance
 - YAML frontmatter consistency
 - Filename conventions
@@ -149,17 +164,20 @@ The system automatically validates:
 ### Common Issues and Solutions
 
 #### Missing YAML Frontmatter
+
 ```bash
 # Auto-fix frontmatter issues
 python3 40-code/organization/yaml-frontmatter-enforcer.py --fix
 ```
 
 #### Structure Violations
+
 - Check `.kb/policy/kb-policy.yaml` for requirements
 - Use validation scripts to identify issues
 - Follow directory placement rules
 
 #### Cross-Reference Breaks
+
 - Update internal links after moving files
 - Use relative paths where possible
 - Validate links after major reorganizations
@@ -167,6 +185,7 @@ python3 40-code/organization/yaml-frontmatter-enforcer.py --fix
 ## Best Practices
 
 ### Content Creation
+
 1. **Start with templates** from `.kb/templates/`
 2. **Use consistent metadata** following JSON schemas
 3. **Write descriptive titles** and summaries
@@ -174,6 +193,7 @@ python3 40-code/organization/yaml-frontmatter-enforcer.py --fix
 5. **Link related content** to build knowledge networks
 
 ### Organization Maintenance
+
 1. **Regular validation** using provided scripts
 2. **Periodic cleanup** of outdated content
 3. **Migration to archive** for deprecated materials
@@ -181,6 +201,7 @@ python3 40-code/organization/yaml-frontmatter-enforcer.py --fix
 5. **Follow governance policies** in `.kb/policy/`
 
 ### Collaboration
+
 1. **Document changes** in commit messages
 2. **Use pull requests** for major structural changes
 3. **Follow naming conventions** consistently
@@ -190,18 +211,21 @@ python3 40-code/organization/yaml-frontmatter-enforcer.py --fix
 ## Advanced Features
 
 ### Database Integration
+
 - **Knowledge tracking** in `30-data/database/knowledge.db`
 - **Citation management** in `30-data/database/citations.db`
 - **Analytics collection** in `30-data/database/analytics.db`
 - **Workflow tracking** in `30-data/database/workflows.db`
 
 ### Automation Tools
+
 - **Content enhancement** scripts in `40-code/`
 - **Organization maintenance** utilities
 - **Migration helpers** for bulk operations
 - **Validation and compliance** checking
 
 ### Resource Management
+
 - **Tool documentation** in `80-resources/tools/`
 - **MCP server guides** in `80-resources/mcp-servers-guide/`
 - **VSCode customization** guides
@@ -210,6 +234,7 @@ python3 40-code/organization/yaml-frontmatter-enforcer.py --fix
 ## Troubleshooting
 
 ### Getting Help
+
 1. Check this user guide for common solutions
 2. Review governance policies in `.kb/policy/`
 3. Run validation scripts for specific issues
@@ -217,12 +242,14 @@ python3 40-code/organization/yaml-frontmatter-enforcer.py --fix
 5. Look at examples in existing content
 
 ### Common Patterns
+
 - **Project setup**: Follow examples in `20-projects/active/`
 - **Research documentation**: See patterns in `10-knowledge/`
 - **Tool integration**: Reference `80-resources/` guides
 - **Data management**: Follow `30-data/` organization
 
 ### Recovery Procedures
+
 - **Backup validation**: Use Git history for recovery
 - **Structure restoration**: Re-run validation scripts
 - **Content migration**: Use automated migration tools

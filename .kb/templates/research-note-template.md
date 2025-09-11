@@ -25,23 +25,28 @@ Brief description of the research topic, concept, or finding.
 ## Main Content
 
 ### Context
+
 Provide background and context for this research note.
 
 ### Key Findings
+
 - Finding 1: Description and implications
 - Finding 2: Description and implications
 - Finding 3: Description and implications
 
 ### Methodology
+
 If applicable, describe the research methodology or approach used.
 
 ## Connections
 
 ### Related Notes
+
 - [[note-name-1]] - Brief description of relationship
 - [[note-name-2]] - Brief description of relationship
 
 ### See Also
+
 - [External Resource](url) - Description
 - [Academic Paper](url) - Citation and relevance
 

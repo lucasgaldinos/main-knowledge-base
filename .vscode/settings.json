@@ -1,1 +1,85 @@
-{}
+{
+    "editor.formatOnSave": false,
+    // Terminal Profiles: Separate interactive and automation contexts
+    "terminal.integrated.profiles.linux": {
+        "Bash (interactive)": {
+            "path": "/bin/bash",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash",
+            "color": "terminal.ansiGreen",
+            "env": {
+                "TERM": "xterm-256color"
+            }
+        },
+        "Bash (automation)": {
+            "path": "/bin/bash",
+            "args": [
+                "--noprofile",
+                "--norc"
+            ],
+            "icon": "rocket",
+            "color": "terminal.ansiMagenta",
+            "env": {
+                "LC_ALL": "C",
+                "CI": "1",
+                "NO_COLOR": "1"
+            }
+        },
+        "Bash (container)": {
+            "path": "/usr/bin/env",
+            "args": [
+                "bash",
+                "-l"
+            ],
+            "icon": "vm",
+            "color": "terminal.ansiBlue",
+            "env": {
+                "IN_CONTAINER": "1"
+            }
+        }
+    },
+    // Default profile for interactive work
+    "terminal.integrated.defaultProfile.linux": "bash",
+    // Automation profile for tasks and debugging (replaces legacy automationShell)
+    "terminal.integrated.automationProfile.linux": {
+        "path": "/bin/bash",
+        "args": [
+            "--noprofile",
+            "--norc",
+            "-c"
+        ],
+        "env": {
+            "CI": "1",
+            "DEBIAN_FRONTEND": "noninteractive",
+            "GIT_TERMINAL_PROMPT": "0",
+            "NO_COLOR": "1",
+            "LC_ALL": "C"
+        }
+    },
+    // Shell integration for command detection, history, and decorations
+    "terminal.integrated.enableShellIntegration": true,
+    // Performance and UX optimizations
+    "terminal.integrated.scrollback": 20000,
+    "terminal.integrated.enablePersistentSessions": true,
+    "terminal.integrated.tabs.enabled": true,
+    "terminal.integrated.allowChords": true,
+    // "terminal.integrated.fontFamily": "FiraCode Nerd Font, 'Courier New', monospace",
+    // Auto-replies for common automation prompts
+    "terminal.integrated.autoReplies": {
+        "Do you want to continue\\? \\[Y/n\\]": "Y",
+        "Proceed\\? \\(y/N\\)": "y",
+        "Continue\\? \\[y/N\\]": "y",
+        "Are you sure\\? \\[y/N\\]": "y"
+    },
+    // Keep essential VS Code keybindings, forward rest to terminal
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.action.quickOpen",
+        "workbench.action.terminal.focusFind",
+        "workbench.action.terminal.runSelectedText",
+        "workbench.action.terminal.clear",
+        "workbench.action.tasks.runTask",
+        "workbench.action.terminal.toggleTerminal"
+    ]
+}
