@@ -92,6 +92,12 @@ tags: [todo, tasks, priorities, implementation]
   3. for agent toolsets
   4. for mcp configurations and servers, specifically following vscode github copilots.
 - [ ] ULTRA HIGH `deep-research` on how to automate task creation (JIRA mcp/extension or github actions. Ideally both).
+- [ ] ULTRA HIGH full complte guide on git, with multipl examples by difficulty generated in the appropriate folder
+  - `deep-research` on git usage
+  - `deep-research` on git hooks, precommit hooks, and etc. for code quality and automation.
+  - `deep-research` on other git automation tools
+  - `deep-research` on other git features and best practices.
+
 - [ ] add `mcp-deep-code-research` to `arxiv-mcp-improved` to analyze the code and suggest improvements.
 - [ ] add `yaml` proper tags to all `.md` files.
 - [ ] `python-testing-guide.md` needs proper formatting, specially for formulas.

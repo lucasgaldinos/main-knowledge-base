@@ -26,7 +26,7 @@ citations: []
 
 ### **ROOT LEVEL MANDATORY STRUCTURE**
 
-```
+```tree
 /
 ├── .github/          # GitHub configuration, workflows, instructions (ROOT ONLY)
 ├── .vscode/          # VS Code settings and configuration (ROOT ONLY)
