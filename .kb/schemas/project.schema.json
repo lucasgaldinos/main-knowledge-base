@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kb.local/schemas/project.schema.json",
+  "title": "Knowledge Base Project Schema",
+  "description": "Schema for project documents and completion reports",
+  "type": "object",
+  "required": ["id", "title", "created", "status", "type", "phase"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^PRJ-[0-9]{4}[A-Z0-9]+-[a-z0-9-]+$",
+      "description": "Project identifier with year, sequence, and slug"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 200,
+      "description": "Project title"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Detailed project description"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Project start date"
+    },
+    "completed": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Project completion date"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "active", "completed", "archived", "deprecated"],
+      "description": "Current project status"
+    },
+    "phase": {
+      "type": "string",
+      "enum": ["planning", "development", "testing", "deployment", "maintenance"],
+      "description": "Current project phase"
+    },
+    "type": {
+      "type": "string",
+      "const": "project",
+      "description": "Document type identifier"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical"],
+      "description": "Project priority"
+    },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Project objectives and goals"
+    },
+    "deliverables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "description": {"type": "string"},
+          "due_date": {"type": "string", "format": "date"},
+          "status": {"type": "string", "enum": ["planned", "in-progress", "completed", "delayed"]}
+        },
+        "required": ["name", "status"]
+      },
+      "description": "Project deliverables and milestones"
+    },
+    "team": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "role": {"type": "string"},
+          "orcid": {"type": "string", "pattern": "^0000-000[0-9]-[0-9]{4}-[0-9]{3}[0-9X]$"}
+        },
+        "required": ["name", "role"]
+      },
+      "description": "Project team members"
+    },
+    "datasets": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^DSET-[a-z0-9-]+$"
+      },
+      "description": "Associated datasets"
+    },
+    "experiments": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EXP-[0-9]{8}-[a-z0-9-]+$"
+      },
+      "description": "Associated experiments"
+    },
+    "manuscripts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Associated manuscripts and publications"
+    },
+    "funding": {
+      "type": "object",
+      "properties": {
+        "source": {"type": "string"},
+        "grant_id": {"type": "string"},
+        "amount": {"type": "number"},
+        "currency": {"type": "string"}
+      },
+      "description": "Funding information"
+    },
+    "license": {
+      "type": "string",
+      "enum": ["CC-BY-4.0", "CC-BY-SA-4.0", "MIT", "Apache-2.0", "GPL-3.0"],
+      "description": "Project license"
+    },
+    "sensitivity": {
+      "type": "string",
+      "enum": ["public", "internal", "restricted", "confidential"],
+      "description": "Data sensitivity classification"
+    }
+  },
+  "additionalProperties": true
+}

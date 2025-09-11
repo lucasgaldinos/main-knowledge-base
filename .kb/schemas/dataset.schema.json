@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kb.local/schemas/dataset.schema.json",
+  "title": "Knowledge Base Dataset Schema",
+  "description": "Schema for dataset metadata following FAIR principles",
+  "type": "object",
+  "required": ["name", "title", "version", "created", "license", "type"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^DSET-[a-z0-9-]+$",
+      "description": "Dataset identifier"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Human-readable dataset title"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Detailed dataset description"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^([0-9]+)\\.([0-9]+)\\.([0-9]+)$",
+      "description": "Semantic version"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Dataset creation timestamp"
+    },
+    "modified": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last modification timestamp"
+    },
+    "type": {
+      "type": "string",
+      "const": "dataset",
+      "description": "Document type identifier"
+    },
+    "license": {
+      "type": "string",
+      "enum": ["CC-BY-4.0", "CC-BY-SA-4.0", "MIT", "Apache-2.0", "GPL-3.0"],
+      "description": "SPDX license identifier"
+    },
+    "contributors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "orcid": {"type": "string", "pattern": "^0000-000[0-9]-[0-9]{4}-[0-9]{3}[0-9X]$"},
+          "role": {"type": "string", "enum": ["creator", "contributor", "maintainer", "contact"]}
+        },
+        "required": ["name", "role"]
+      },
+      "description": "Dataset contributors"
+    },
+    "keywords": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Dataset keywords and tags"
+    },
+    "subjects": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Subject classification (e.g., domain-specific terms)"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {"type": "string"},
+          "url": {"type": "string", "format": "uri"},
+          "doi": {"type": "string"}
+        }
+      },
+      "description": "Data sources and provenance"
+    },
+    "format": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "File formats in the dataset"
+    },
+    "size": {
+      "type": "object",
+      "properties": {
+        "bytes": {"type": "integer"},
+        "files": {"type": "integer"},
+        "records": {"type": "integer"}
+      },
+      "description": "Dataset size metrics"
+    },
+    "schema": {
+      "type": "object",
+      "description": "Data schema and field definitions"
+    },
+    "quality": {
+      "type": "object",
+      "properties": {
+        "completeness": {"type": "number", "minimum": 0, "maximum": 1},
+        "accuracy": {"type": "number", "minimum": 0, "maximum": 1},
+        "consistency": {"type": "number", "minimum": 0, "maximum": 1}
+      },
+      "description": "Data quality metrics"
+    },
+    "access": {
+      "type": "object",
+      "properties": {
+        "url": {"type": "string", "format": "uri"},
+        "restrictions": {"type": "string"},
+        "contact": {"type": "string"}
+      },
+      "description": "Data access information"
+    },
+    "sensitivity": {
+      "type": "string",
+      "enum": ["public", "internal", "restricted", "confidential"],
+      "description": "Data sensitivity classification"
+    }
+  },
+  "additionalProperties": true
+}

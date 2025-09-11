@@ -1,0 +1,130 @@
+---
+# Knowledge Base Organizational Policy
+# Version: 1.0.0
+# Based on academic knowledge management best practices and FAIR data principles
+
+version: 1
+
+# Global naming conventions
+naming:
+  case: flexible  # Allow flexibility for existing files
+  forbid_spaces: true
+  allowed_chars: '^[a-zA-Z0-9._\-/]+$'  # Allow capitals for existing README files
+  
+# Directory structure validation rules
+paths:
+  # 00-admin: Governance and repository meta
+  - path: '00-admin'
+    description: 'Governance documents, policies, and repository metadata'
+    required_files: ['README.md']
+    
+  # 10-knowledge: Consolidated knowledge base
+  - path: '10-knowledge/notes'
+    description: 'Atomic notes with unique IDs and metadata'
+    filename: '^[0-9]{8,14}-[a-z0-9-]+\.md$'
+    require_front_matter: true
+    schema: '.kb/schemas/note.schema.json'
+    
+  - path: '10-knowledge/literature'
+    description: 'Academic literature, papers, and references'
+    required_files: ['README.md', 'library.bib']
+    
+  - path: '10-knowledge/methods'
+    description: 'Methodologies, processes, and best practices'
+    require_front_matter: true
+    schema: '.kb/schemas/method.schema.json'
+    
+  # 20-projects: Project lifecycle management
+  - path: '20-projects/active'
+    description: 'Currently active projects'
+    
+  - path: '20-projects/completed'
+    description: 'Completed projects and reports'
+    require_front_matter: true
+    schema: '.kb/schemas/project.schema.json'
+    
+  - path: '20-projects/archived'
+    description: 'Archived historical projects'
+    
+  # 30-data: Datasets and data management
+  - path: '30-data/DSET-[a-z0-9-]+'
+    description: 'Versioned datasets following FAIR principles'
+    required_files: ['README.md', 'dataset.json']
+    schema: '.kb/schemas/dataset.schema.json'
+    
+  # 40-code: Shared libraries and reusable code
+  - path: '40-code'
+    description: 'Shared libraries, tooling, and reusable modules'
+    
+  # 50-experiments: Reproducible experiments
+  - path: '50-experiments/EXP-[0-9]{8}-[a-z0-9-]+'
+    description: 'Reproducible experiments with versioned configurations'
+    required_files: ['config/', 'README.md']
+    
+  # 60-manuscripts: Academic writing and publications
+  - path: '60-manuscripts'
+    description: 'Papers, theses, grants, and academic writing'
+    require_front_matter: true
+    schema: '.kb/schemas/manuscript.schema.json'
+    
+  # 70-presentations: Talks and presentations
+  - path: '70-presentations'
+    description: 'Conference talks, seminars, and presentations'
+    
+  # 80-resources: Templates and reusable assets
+  - path: '80-resources'
+    description: 'Templates, style guides, and reusable checklists'
+    
+  # 90-archive: Cold storage
+  - path: '90-archive'
+    description: 'Archived content and legacy materials'
+
+# Required root-level files
+require:
+  - path: 'README.md'
+  - path: 'CITATION.cff'
+  - path: 'CONTRIBUTING.md'
+  - path: 'GOVERNANCE.md'
+  - path: '.pre-commit-config.yaml'
+  - path: '.kb/policy/kb-policy.yaml'
+
+# Controlled vocabularies for metadata validation
+metadata:
+  controlled_vocabs:
+    status: ['draft', 'active', 'completed', 'archived', 'deprecated']
+    priority: ['low', 'medium', 'high', 'critical']
+    sensitivity: ['public', 'internal', 'restricted', 'confidential']
+    license_spdx: ['CC-BY-4.0', 'CC-BY-SA-4.0', 'MIT', 'Apache-2.0', 'GPL-3.0']
+    project_phase: ['planning', 'development', 'testing', 'deployment', 'maintenance']
+    document_type: ['note', 'method', 'project', 'dataset', 'manuscript', 'presentation']
+
+# File size and format policies
+files:
+  max_file_size_mb: 50  # Files larger than this should use Git LFS
+  allowed_extensions:
+    documents: ['.md', '.txt', '.pdf', '.docx']
+    data: ['.csv', '.json', '.yaml', '.yml', '.xml']
+    code: ['.py', '.r', '.js', '.sql', '.sh']
+    images: ['.png', '.jpg', '.jpeg', '.svg', '.webp']
+    archives: ['.zip', '.tar.gz', '.7z']
+
+# Git LFS configuration
+lfs:
+  track_patterns:
+    - '*.pdf'
+    - '*.zip'
+    - '*.tar.gz'
+    - '30-data/**'
+    - 'assets/**'
+
+# Pre-commit enforcement levels
+enforcement:
+  level: 'warning'  # 'error' | 'warning' | 'disabled'
+  auto_fix: true    # Attempt to automatically fix violations when possible
+  
+# Migration and transition settings
+migration:
+  preserve_history: true
+  update_cross_references: true
+  create_redirects: true
+  batch_size: 10  # Number of files to migrate in each batch

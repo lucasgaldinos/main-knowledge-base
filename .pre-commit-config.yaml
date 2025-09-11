@@ -1,0 +1,105 @@
+# Knowledge Base Pre-commit Configuration
+# Automated validation and enforcement of organizational standards
+# Install with: pre-commit install && pre-commit install -t commit-msg
+
+repos:
+  # Standard pre-commit hooks for file formatting and basic checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-yaml
+        args: ['--allow-multiple-documents']
+      - id: check-json
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: mixed-line-ending
+        args: ['--fix=lf']
+      - id: check-merge-conflict
+      - id: check-case-conflict
+      - id: detect-private-key
+      - id: check-added-large-files
+        args: ['--maxkb=51200']  # 50 MB threshold
+      - id: check-executables-have-shebangs
+      - id: check-shebang-scripts-are-executable
+
+  # YAML linting for configuration files
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+        args: ['-d', '{extends: default, rules: {line-length: {max: 120}, comments: {min-spaces-from-content: 1}}}']
+
+  # Markdown linting for documentation
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.41.0
+    hooks:
+      - id: markdownlint
+        args: ['--config', '.kb/config/.markdownlint.yaml']
+
+  # Spell checking
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.3.0
+    hooks:
+      - id: codespell
+        args: ['--skip=*.git,*.json,*.lock,cache/*,database/*,.mypy_cache/*,.venv/*']
+
+  # Python code formatting and linting
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.6.9
+    hooks:
+      - id: ruff
+        args: ['--fix', '--exit-non-zero-on-fix']
+      - id: ruff-format
+
+  # Jupyter notebook processing
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.7.1
+    hooks:
+      - id: nbstripout
+
+  # Security scanning
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+        args: ['--baseline', '.secrets.baseline']
+
+  # Knowledge Base specific validation hooks
+  - repo: local
+    hooks:
+      # Validate directory structure and organizational policies
+      - id: kb-structure-validate
+        name: Validate knowledge base structure
+        entry: python3 .kb/scripts/validate_structure.py
+        language: system
+        pass_filenames: false
+        always_run: true
+        
+      # Validate metadata schemas in documents
+      - id: kb-metadata-validate
+        name: Validate metadata schemas
+        entry: python3 .kb/scripts/validate_metadata.py
+        language: system
+        files: '\.(md|yaml|yml|json)$'
+        
+      # Enforce filename policies
+      - id: kb-filename-policy
+        name: Enforce filename policies
+        entry: python3 .kb/scripts/check_filenames.py
+        language: system
+        pass_filenames: true
+
+  # Commit message formatting
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v3.30.0
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]
+
+# Configuration for individual tools
+default_language_version:
+  python: python3
+
+# Global configuration
+fail_fast: false
+minimum_pre_commit_version: '2.0.0'

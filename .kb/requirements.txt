@@ -1,0 +1,10 @@
+# Knowledge Base Validation Dependencies
+# Install with: pip install -r .kb/requirements.txt
+
+# Core dependencies for validation scripts
+PyYAML>=6.0.1
+jsonschema>=4.21.0
+
+# Optional: Enhanced validation capabilities
+# markdownlint-cli2 for Markdown linting
+# yamllint for YAML linting

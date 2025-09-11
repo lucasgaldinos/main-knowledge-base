@@ -25,6 +25,7 @@ citations: []
 ## � RECENT UPDATES (2025-09-11)
 
 ### ✅ Workspace Reorganization Completed
+
 - **TODO.md** and **TASKS.md** moved to root level for operational efficiency
 - **current-work/** directory created for active development files
 - Kebab-case naming enforced: `mcp_servers_guide` → `mcp-servers-guide`
