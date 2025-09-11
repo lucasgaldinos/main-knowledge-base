@@ -19,6 +19,7 @@ This directory contains academic literature, papers, and reference materials for
 ## Migration
 
 This directory will consolidate literature from:
+
 - `resources/literature/` - Existing literature files
 - `docs/research/` - Research documentation
 - Individual project literature references
@@ -26,6 +27,7 @@ This directory will consolidate literature from:
 ## Organization
 
 Literature will be organized by:
+
 - Topic/domain areas
 - Publication year
 - Research projects

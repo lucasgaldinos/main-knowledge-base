@@ -12,19 +12,25 @@ This directory contains the unified knowledge base consolidating content from th
 ## Structure
 
 ### `notes/`
+
 Atomic notes with unique identifiers and metadata following Zettelkasten principles:
+
 - Format: `YYYYMMDDHHMMSS-topic-slug.md`
 - Required YAML frontmatter with ID, title, created, status, tags
 - Cross-linked to projects, datasets, and other notes
 
 ### `literature/`
+
 Academic literature, papers, and reference materials:
+
 - `library.bib` - Central BibTeX bibliography
 - Organized literature reviews and summaries
 - DOI and citation management
 
 ### `methods/`
+
 Methodologies, processes, and best practices:
+
 - Implementation guides and procedures
 - Testing and validation approaches
 - Documentation standards and templates
@@ -32,6 +38,7 @@ Methodologies, processes, and best practices:
 ## Migration Status
 
 This directory will consolidate content from:
+
 - `docs/` → `10-knowledge/methods/` and `10-knowledge/literature/`
 - `knowledge/` → `10-knowledge/notes/` and specialized subdirectories
 - Cross-references will be updated systematically
