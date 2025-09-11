@@ -5,18 +5,83 @@ description: Enforce academic folder structure and organization rules for AI kno
 title: Folder Structure Enforcement Instruction
 status: active
 created: '2025-09-10'
-updated: '2025-09-11'
+updated: '2025-01-11'
 tags:
 - .github
 - instructions
 - folder-structure
 - academic-organization
 - governance
-version: 1.1.0
+- automated-enforcement
+version: 2.0.0
 authors:
 - lucas_galdino
 citations: []
 ---
+
+
+
+# Folder Structure Enforcement Rules
+
+## 🆕 MAJOR UPDATE (2025-01-11) - Comprehensive Organizational Framework
+
+### ✅ Research-Based Implementation Completed
+
+- **Comprehensive Deep Research**: Conducted systematic research on knowledge base organization methods
+- **Academic Framework**: Implemented evidence-based 00-90 numerical taxonomy following academic best practices
+- **Automated Governance**: Added `.kb/` governance structure with policies, schemas, and validation scripts
+- **Pre-commit Enforcement**: Automated validation through Git hooks prevents organizational drift
+- **JSON Schema Validation**: Metadata consistency enforced through structured schemas
+- **Migration Framework**: Systematic approach to consolidating existing content
+
+### 🏛️ ACADEMIC TAXONOMY (00-90 Structure)
+
+```tree
+/
+├── .github/            # GitHub configuration, workflows, instructions
+├── .kb/                # GOVERNANCE: Policies, schemas, validation scripts
+│   ├── policy/         # Organizational policies and rules
+│   ├── schemas/        # JSON schemas for metadata validation
+│   ├── scripts/        # Validation and enforcement scripts
+│   └── templates/      # Content creation templates
+├── 00-admin/           # Administrative and governance documents
+├── 10-knowledge/       # CONSOLIDATED KNOWLEDGE BASE
+│   ├── notes/          # Atomic notes (Zettelkasten-style)
+│   ├── literature/     # Academic papers and references
+│   └── methods/        # Methodologies and best practices
+├── 20-projects/        # Project lifecycle management
+│   ├── active/         # Currently active projects
+│   ├── completed/      # Finished projects and reports
+│   └── archived/       # Historical projects
+├── 30-data/            # FAIR-compliant datasets
+├── 40-code/            # Shared libraries and reusable code
+├── 50-experiments/     # Reproducible experiments
+├── 60-manuscripts/     # Academic writing and publications
+├── 70-presentations/   # Talks and presentations
+├── 80-resources/       # Templates and reusable assets
+├── 90-archive/         # Cold storage for deprecated content
+├── TODO.md             # Operational task management (ROOT LEVEL)
+└── TASKS.md            # Task analysis and planning (ROOT LEVEL)
+```
+
+## 🔧 AUTOMATED ENFORCEMENT SYSTEM
+
+### Pre-commit Hooks (`.pre-commit-config.yaml`)
+- **Structure Validation**: Enforces directory organization and required files
+- **Metadata Validation**: JSON schema validation for YAML frontmatter
+- **Filename Policy**: Consistent naming conventions and character restrictions
+- **Content Quality**: Markdown linting, spell checking, security scanning
+
+### Governance Framework (`.kb/policy/kb-policy.yaml`)
+- **Path Rules**: Directory-specific policies and requirements
+- **Naming Conventions**: Flexible enforcement accommodating existing content
+- **Controlled Vocabularies**: Standardized tags, status values, license identifiers
+- **File Policies**: Size limits, extension validation, Git LFS configuration
+
+### Validation Scripts
+- `validate_structure.py`: Directory structure and required file checking
+- `validate_metadata.py`: YAML frontmatter and JSON schema validation
+- `check_filenames.py`: Naming convention and character policy enforcement
 
 
 
