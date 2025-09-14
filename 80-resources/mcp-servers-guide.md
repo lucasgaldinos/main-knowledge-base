@@ -3,7 +3,7 @@ title: MCP Servers Implementation Guide
 description: Model Context Protocol (MCP) is a standardized protocol that enables
   AI assistants to interact with external tools and services through a unified interface.
   MCP servers act as bridges between AI mo...
-status: published
+status: active
 created: '2025-09-10'
 updated: '2025-09-10'
 tags:

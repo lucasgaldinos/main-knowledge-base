@@ -1,7 +1,7 @@
 ---
 title: Comprehensive AI Assistant Tools Reference
 description: Complete 1NF reference table for all available tools with MCP server associations, usage examples, and best practices
-status: published
+status: active
 created: 2025-09-10
 updated: 2025-09-10
 tags: [tools, reference, mcp, ai-agents, comprehensive]

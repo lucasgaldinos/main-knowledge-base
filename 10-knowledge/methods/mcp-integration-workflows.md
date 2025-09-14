@@ -1,7 +1,7 @@
 ---
 title: MCP Integration Workflows and Orchestration Guide
 description: Comprehensive guide for Model Context Protocol (MCP) server integration, orchestration patterns, and advanced workflows
-status: published
+status: active
 created: 2025-09-10
 updated: 2025-09-10
 tags: [mcp, model-context-protocol, integration, orchestration, workflows, automation]

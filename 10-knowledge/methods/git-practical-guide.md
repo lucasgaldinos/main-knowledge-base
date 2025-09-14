@@ -1,6 +1,6 @@
 ---
-title: Git Complete Guide with Examples
-description: Comprehensive guide for Git usage, automation, and academic workflows (beginner to advanced)
+title: Git Practical Guide with Examples
+description: Practical guide for Git usage, automation, and academic workflows (beginner to intermediate)
 status: active
 created: 2025-09-12
 updated: 2025-09-12

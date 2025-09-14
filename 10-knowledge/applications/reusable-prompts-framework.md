@@ -1,7 +1,7 @@
 ---
 title: Reusable Prompts Framework
 description: '# Reusable Prompts Framework'
-status: published
+status: active
 created: '2025-09-10'
 updated: '2025-09-10'
 tags:

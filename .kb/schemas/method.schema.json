@@ -1,0 +1,77 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Method Document Schema",
+    "description": "Schema for method documentation files in the knowledge base",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "description": "The title of the method document"
+        },
+        "description": {
+            "type": "string",
+            "description": "A brief description of the method"
+        },
+        "status": {
+            "type": "string",
+            "enum": [
+                "draft",
+                "active",
+                "completed",
+                "archived",
+                "deprecated"
+            ],
+            "description": "The current status of the method document"
+        },
+        "created": {
+            "type": "string",
+            "format": "date",
+            "description": "Creation date in YYYY-MM-DD format"
+        },
+        "updated": {
+            "type": "string",
+            "format": "date",
+            "description": "Last update date in YYYY-MM-DD format"
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Tags for categorization and search"
+        },
+        "version": {
+            "type": "string",
+            "description": "Version of the method document"
+        },
+        "authors": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Authors of the method document"
+        },
+        "sources": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Sources and references for the method"
+        },
+        "citations": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Academic citations related to the method"
+        }
+    },
+    "required": [
+        "title",
+        "description",
+        "status",
+        "created",
+        "updated"
+    ],
+    "additionalProperties": true
+}

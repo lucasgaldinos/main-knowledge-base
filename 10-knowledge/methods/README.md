@@ -1,7 +1,7 @@
 ---
 title: Process Documentation
 description: Workflows, procedures, and standard operating procedures for consistent execution and quality maintenance
-status: published
+status: active
 created: 2025-09-10
 updated: 2025-09-10
 tags: [processes, workflows, procedures, sop, quality, consistency]

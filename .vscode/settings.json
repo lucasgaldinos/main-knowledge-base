@@ -44,7 +44,9 @@
         "*.md": "markdown",
         "*.bib": "bibtex",
         "*.cff": "yaml",
-        "*.frontmatter": "yaml"
+        "*.frontmatter": "yaml",
+        "**/.kb/**/*.json": "jsonc",
+        "**/PKM-BRANCH-TRACKING.md": "markdown"
     },
     // === SEARCH AND PERFORMANCE OPTIMIZATION ===
     "search.exclude": {
@@ -54,10 +56,12 @@
         "**/.next": true,
         "**/.venv": true,
         "**/30-data/**/*.db": true, // Exclude academic databases
+        "**/30-data/analysis-reports/": true, // PKM: Exclude generated reports from search
         "**/90-archive/**": true, // Exclude archived content
         "**/*.cache": true,
         "**/arxiv/cache.db": true,
-        "**/.git": true
+        "**/.git": true,
+        "**/.mypy_cache/": true
     },
     "files.watcherExclude": {
         "**/.git/objects/**": true,
@@ -228,5 +232,16 @@
             "foreground": "white",
             "background": "purple"
         }
-    }
+    },
+    // === PKM ARCHITECTURAL OPTIMIZATIONS ===
+    // PKM workflow optimizations
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "*.md": "${capture}-sources.md,${capture}-report.md,${capture}-analysis.md"
+    },
+    // Academic taxonomy support
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.filePath": "on",
+    "outline.showFunctions": true,
+    "outline.showModules": true
 }

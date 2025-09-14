@@ -1,7 +1,7 @@
 ---
 title: Implementation Guides
 description: Step-by-step implementation documentation and guides
-status: published
+status: active
 created: 2025-09-10
 updated: 2025-09-10
 tags: [guides, implementation, procedures]

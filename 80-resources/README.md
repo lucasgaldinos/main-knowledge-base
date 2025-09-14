@@ -1,7 +1,7 @@
 ---
 title: Enterprise MCP Servers Guide
 description: Comprehensive guide for enterprise MCP server implementation
-status: published
+status: active
 created: 2025-09-10
 updated: 2025-09-10
 tags: [tools, mcp, servers, enterprise, integration]

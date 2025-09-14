@@ -1,7 +1,7 @@
 ---
 title: 'Loop 12: Foundations Framework Completion Report'
 description: '# Loop 12: Foundations Framework Completion Report'
-status: published
+status: completed
 created: '2025-09-10'
 updated: '2025-09-10'
 tags:

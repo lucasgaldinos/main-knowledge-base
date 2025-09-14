@@ -3,7 +3,7 @@ title: Comprehensive System Design for a Scalable, Collaborative Academic Resear
   Platform with MCP Integration (2025)
 description: '# Comprehensive System Design for a Scalable, Collaborative Academic
   Research Platform with MCP Integration (2025)'
-status: published
+status: completed
 created: '2025-09-10'
 updated: '2025-09-10'
 tags:

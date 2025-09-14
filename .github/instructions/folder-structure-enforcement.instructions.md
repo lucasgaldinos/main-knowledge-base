@@ -158,7 +158,7 @@ version: [X.Y.Z]
 
 - **ALWAYS** run YAML frontmatter enforcer after bulk operations:
   ```bash
-  python3 infrastructure/scripts/organization/yaml-frontmatter-enforcer.py --fix
+  python3 .kb/scripts/yaml-frontmatter-enforcer.py --fix
   ```
 
 ### **3. Database Integration Rules**
@@ -179,7 +179,7 @@ version: [X.Y.Z]
 
 ### **5. Automation and Scripts Rules**
 
-- **ALWAYS** place automation scripts in `infrastructure/scripts/`
+- **ALWAYS** place automation scripts in `.kb/scripts/`
 - **USE** existing automation tools before creating new ones
 - **FOLLOW** governance framework for script development
 - **TEST** scripts before deployment to avoid data loss

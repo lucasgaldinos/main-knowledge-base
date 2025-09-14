@@ -1,7 +1,7 @@
 ---
 title: Research Materials
 description: Research content, academic papers, literature reviews, and scholarly materials for knowledge advancement
-status: published
+status: active
 created: 2025-09-10
 updated: 2025-09-10
 tags: [research, academic, papers, literature-review, scholarly, knowledge]

@@ -1,7 +1,7 @@
 ---
 title: AI Agents and Toolsets Configuration Guide
 description: Comprehensive guide for configuring VS Code GitHub Copilot AI agents, custom toolsets, and MCP server orchestration
-status: published
+status: active
 created: 2025-09-10
 updated: 2025-09-10
 tags: [ai-agents, copilot, toolsets, mcp, automation, workflows]

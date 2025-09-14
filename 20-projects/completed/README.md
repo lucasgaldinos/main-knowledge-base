@@ -1,7 +1,7 @@
 ---
 title: Project Documentation
 description: Project documentation, case studies, and specific implementation records with lessons learned
-status: published
+status: completed
 created: 2025-09-10
 updated: 2025-09-10
 tags: [projects, case-studies, implementation, documentation, lessons-learned]

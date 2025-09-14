@@ -139,7 +139,7 @@ Metadata and front matter
 title: Model evaluation rubric
 authors: [jdoe]
 tags: [ml, evaluation, metrics]
-status: published
+status: active
 updated: 2025-09-06
 related: [proj-abc, metric-f1]
 ---

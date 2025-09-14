@@ -1,7 +1,7 @@
 ---
 title: Reference Materials
 description: Reference materials, standards, specifications, and quick lookup resources for rapid consultation
-status: published
+status: active
 created: 2025-09-10
 updated: 2025-09-10
 tags: [reference, standards, specifications, lookup, quick-reference]

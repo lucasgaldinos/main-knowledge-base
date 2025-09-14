@@ -1,7 +1,7 @@
 ---
 title: AI Knowledge Base Foundations
 description: Foundational framework for understanding, organizing, and leveraging artificial intelligence knowledge systems and architectural principles
-status: published
+status: active
 created: 2025-09-10
 updated: 2025-09-10
 tags: [foundations, ai, knowledge-architecture, principles, framework]

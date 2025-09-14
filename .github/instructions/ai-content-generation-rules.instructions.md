@@ -133,7 +133,7 @@ team_size: [number]
 
 1. Run YAML frontmatter enforcer:
    ```bash
-   python3 infrastructure/scripts/organization/yaml-frontmatter-enforcer.py --fix
+   python3 .kb/scripts/yaml-frontmatter-enforcer.py --fix
    ```
 
 2. Validate academic structure compliance

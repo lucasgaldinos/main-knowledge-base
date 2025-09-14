@@ -1,6 +1,6 @@
 ---
-title: Comprehensive Git Guide - From Fundamentals to Advanced Mastery
-description: A deep-dive into Git, from its internal object model to advanced workflows, automation, performance optimization, and VS Code integration.
+title: Git Technical Comprehensive Guide - Advanced Internals and Patterns
+description: Deep technical Git guide covering internals, advanced patterns, automation, and enterprise workflows
 status: active
 created: 2025-09-12
 updated: 2025-09-12

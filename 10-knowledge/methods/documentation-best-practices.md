@@ -1,7 +1,7 @@
 ---
 title: Documentation Best Practices Guide
 description: Comprehensive guide for creating high-quality software documentation following modern standards and frameworks
-status: published
+status: active
 created: 2025-09-10
 updated: 2025-09-10
 tags: [documentation, best-practices, sphinx, frameworks, standards]

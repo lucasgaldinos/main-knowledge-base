@@ -1,7 +1,7 @@
 ---
 title: Tools Reference
 description: Tool documentation, configurations, integrations, and usage guides for the AI knowledge base ecosystem
-status: published
+status: active
 created: 2025-09-10
 updated: 2025-09-10
 tags: [tools, configuration, integration, vscode, mcp, reference]

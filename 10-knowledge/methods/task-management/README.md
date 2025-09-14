@@ -1,7 +1,7 @@
 ---
 title: Task Management
 description: Project task tracking and management documentation
-status: updated
+status: active
 created: 2025-09-10
 updated: 2025-09-11
 tags: [processes, task-management, organization]

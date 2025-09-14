@@ -3,7 +3,7 @@ title: ArXiv-MCP Enhanced System Design
 description: This document outlines the enhanced system design for the arxiv-mcp server,
   transforming it from a synchronous, single-threaded implementation to a high-performance,
   asynchronous, parallel-processi...
-status: published
+status: completed
 created: '2025-09-10'
 updated: '2025-09-10'
 tags:

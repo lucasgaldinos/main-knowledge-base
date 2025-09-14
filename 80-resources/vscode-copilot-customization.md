@@ -3,7 +3,7 @@ title: VS Code GitHub Copilot Customization Guide
 description: This guide covers enterprise-grade GitHub Copilot customization for Visual
   Studio Code, incorporating 2025 features including MCP integration, agent mode,
   and advanced AI-assisted development patte...
-status: published
+status: active
 created: '2025-09-10'
 updated: '2025-09-10'
 tags:

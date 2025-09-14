@@ -1,7 +1,7 @@
 ---
 title: VS Code GitHub Copilot Complete Guide
 description: Comprehensive guide for VS Code GitHub Copilot implementation with instructions, prompts, agent toolsets, and MCP configurations
-status: published
+status: active
 created: 2025-09-10
 updated: 2025-09-10
 tags: [tools, vscode, copilot, ai, instructions, prompts, mcp, agent]

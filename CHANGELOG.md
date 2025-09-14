@@ -73,7 +73,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### Infrastructure
 
-- **Scripts Location**: Moved to `infrastructure/scripts/` for centralized automation
+- **Scripts Location**: Consolidated to `.kb/scripts/` following governance framework
 - **Database Setup**: Automated database initialization with comprehensive schema
 - **Quality Assurance**: YAML frontmatter validation and enforcement
 - **Academic Standards**: Citation and governance framework implementation

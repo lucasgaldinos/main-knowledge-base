@@ -1,7 +1,7 @@
 ---
 title: VS Code GitHub Copilot Customization Guide (2025)
 description: '# VS Code GitHub Copilot Customization Guide (2025)'
-status: published
+status: active
 created: '2025-09-10'
 updated: '2025-09-10'
 tags:
