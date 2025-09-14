@@ -148,6 +148,6 @@ git push --set-upstream origin branch-name
 
 ## Related Resources
 
-- [Full Automation Guide](../../10-knowledge/methods/vscode-integrated-terminal-automation-guide.md)
+- [Full Automation Guide](<../../10-knowledge/methods/vscode-integrated-terminal-automation-guide.md>)
 - [VS Code Terminal Documentation](https://code.visualstudio.com/docs/terminal/)
 - [Shell Integration Guide](https://code.visualstudio.com/docs/terminal/shell-integration)

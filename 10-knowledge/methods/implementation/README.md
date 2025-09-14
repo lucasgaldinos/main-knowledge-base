@@ -21,5 +21,5 @@ Provides practical, actionable guidance for implementing complex processes and s
 
 ## Related
 
-- [Guides Overview](../README.md)
+- [Guides Overview](<../README.md>)
 - [Process Documentation](../../processes/)

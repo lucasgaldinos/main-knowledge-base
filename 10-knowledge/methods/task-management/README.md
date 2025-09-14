@@ -28,5 +28,5 @@ Centralizes task management documentation to support systematic project executio
 
 ## Related
 
-- [Process Documentation](../README.md)
+- [Process Documentation](<../README.md>)
 - [Project Reports](../../../projects/)

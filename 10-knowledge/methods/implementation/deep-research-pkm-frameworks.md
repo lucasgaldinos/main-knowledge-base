@@ -7,6 +7,7 @@ This deep research report synthesizes the dominant architectural styles and fram
 ## Key Findings
 
 ### Evidence Base and Reliability
+
 - Most PKM frameworks are practitioner-driven (anecdotal/experiential) rather than supported by controlled studies
 - Elements align with robust cognitive science (externalization reduces cognitive load, retrieval practice and spaced repetition aid memory)
 - Architectural choice is contingent on primary workload, time horizons, collaboration constraints, and structure tolerance
@@ -15,13 +16,16 @@ This deep research report synthesizes the dominant architectural styles and fram
 ### Framework Comparative Analysis
 
 #### 1. PARA (Projects, Areas, Resources, Archives)
+
 **Strengths:**
+
 - Clear alignment to action and time horizons
 - Reduces "where does this go?" friction
 - Easy onboarding; excellent for operational execution
 - Works across file systems, Notion databases, and Obsidian folders
 
 **Weaknesses:**
+
 - Topic-knowledge fragmentation across projects
 - Inherent duplication risk
 - Limited support for networked thought
@@ -30,13 +34,16 @@ This deep research report synthesizes the dominant architectural styles and fram
 **Best Fit:** Project-heavy roles, cross-functional execution, consulting, product management, engineering delivery
 
 #### 2. Zettelkasten
+
 **Strengths:**
+
 - Emergent structure from dense interlinking
 - Powerful for originality, synthesis, and idea emergence
 - Lifelong research scaffolding
 - Encourages atomic notes and bidirectional links
 
 **Weaknesses:**
+
 - High onboarding cost
 - Maintenance and link hygiene required
 - Can become introspective without publishing/synthesis cadence
@@ -44,13 +51,16 @@ This deep research report synthesizes the dominant architectural styles and fram
 **Best Fit:** Researchers, writers, analysts, academics, strategists focused on insight generation
 
 #### 3. Johnny Decimal (JD)
+
 **Strengths:**
+
 - Deterministic reference classification with numeric IDs (00–99 areas, 00–99 categories)
 - Fosters clarity, reduces naming ambiguity
 - Excellent for static reference stores
 - Stable structure independent of alphabetical sorting
 
 **Weaknesses:**
+
 - Less flexible for emergent knowledge
 - Numeric boundaries can be constraining
 - Requires up-front taxonomy work
@@ -59,13 +69,16 @@ This deep research report synthesizes the dominant architectural styles and fram
 **Best Fit:** Reference-heavy domains (SOPs, standards, policy, assets), teams needing predictable findability
 
 #### 4. LYT (Linking Your Thinking) and MOCs
+
 **Strengths:**
+
 - Pragmatic middle path to graphs: MOCs curate subgraphs
 - Makes networked thought navigable
 - Encourages intentional hubs and synthesis pages
 - Lowers cognitive load vs raw graphs
 
 **Weaknesses:**
+
 - Curation overhead
 - Risk of MOC proliferation
 - Needs governance to keep MOCs high-signal
@@ -73,13 +86,16 @@ This deep research report synthesizes the dominant architectural styles and fram
 **Best Fit:** General knowledge workers who benefit from graph thinking with guardrails
 
 #### 5. Evergreen Notes
+
 **Strengths:**
+
 - Emphasizes durable, reworkable notes
 - Aligns with spaced revisitation and progressive refinement
 - Compatible with all systems
 - Supports long-term value creation
 
 **Weaknesses:**
+
 - Requires discipline
 - Risk of over-refactoring
 - Demands clear note state model
@@ -87,45 +103,55 @@ This deep research report synthesizes the dominant architectural styles and fram
 **Best Fit:** Any system aspiring to reusable insight and long-term value creation
 
 #### 6. Building a Second Brain (BASB)
+
 **Strengths:**
+
 - Codifies capture to retrieval workflow
 - Popularized PARA and Progressive Summarization (layers 0–5)
 - Strong on practical workflows, less dogmatic about structure
 
 **Weaknesses:**
+
 - Can bias toward curation over original synthesis
 - Evidence base is primarily experiential
 
 **Best Fit:** Professionals needing steady output and sustainable knowledge pipeline
 
 #### 7. Getting Things Done (GTD)
+
 **Strengths:**
+
 - Gold standard for task capture/clarify/organize/reflect/engage
 - Stress reduction and execution reliability
 - Well-tested methodology
 
 **Weaknesses:**
+
 - Task-centric focus
 - Requires integration to prevent divergence from knowledge artifacts
 
 **Best Fit:** Any role; use as the action layer beneath PKM
 
 #### 8. Diátaxis Framework
+
 **Components:** Tutorials, How-To, Explanation, Reference
 
 **Strengths:**
+
 - Proven in documentation contexts
 - Maps cleanly to note types
 - Forces clarity of audience and goal
 - Excellent for refactoring raw notes into consumable outputs
 
 **Weaknesses:**
+
 - Demands editorial investment
 - May feel heavy for personal notes if applied universally
 
 **Best Fit:** Turning personal notes into durable guides, SOPs, and explainers; backbone for MOCs and Evergreens
 
 **Practical Application:**
+
 - **Tutorials:** Step-by-step guides for future self
 - **How-To:** Goal-oriented checklists/SOPs
 - **Explanations:** Conceptual descriptions
@@ -136,6 +162,7 @@ This deep research report synthesizes the dominant architectural styles and fram
 ### Recommended Hybrid Archetypes
 
 #### The Delivery Researcher (Consultant/PM-Analyst)
+
 - PARA as spine
 - MOCs per client/domain
 - Evergreens for reusable insights
@@ -143,12 +170,14 @@ This deep research report synthesizes the dominant architectural styles and fram
 - JD for reference SOPs
 
 #### The Deep Synthesist (Academic/Strategist/Writer)
+
 - Zettelkasten + Evergreens
 - MOCs as domain maps
 - Minimal PARA (projects as publishing units)
 - Typed links mandatory
 
 #### The Engineering Manager
+
 - PARA structure
 - JD for team SOPs
 - Diátaxis for internal docs
@@ -156,6 +185,7 @@ This deep research report synthesizes the dominant architectural styles and fram
 - Tasks in GTD tool linked to project notes
 
 #### The Founder/Generalist
+
 - PARA + MOCs + Evergreens
 - Light ZK for ideation
 - Notion for CRM/ops
@@ -165,6 +195,7 @@ This deep research report synthesizes the dominant architectural styles and fram
 ### Note and Metadata Schema
 
 **Frontmatter Example (Obsidian YAML):**
+
 ```yaml
 ---
 title: Short, atomic, declarative title
@@ -199,7 +230,9 @@ review:
 ## Tool-Specific Implementations
 
 ### Obsidian
+
 **Key Plugins:**
+
 - Dataview (query notes by metadata)
 - Templater (note templates)
 - Canvas (concept mapping)
@@ -207,20 +240,25 @@ review:
 - QuickAdd (capture)
 
 **Structure:**
+
 - PARA folders
 - /ZK for atomic notes
 - /MOCs as folders with index notes
 - /Reference JD-coded subfolders
 
 ### Roam Research
+
 **Approach:**
+
 - Daily notes as capture
 - Page-per-concept
 - Heavy use of block references
 - Queries for status and type filtering
 
 ### Notion
+
 **Databases:**
+
 - Notes, Projects, Areas, Resources, People, Sources
 - Relations between Notes-Projects, Notes-Sources
 - Rollups to count links and recency
@@ -228,9 +266,11 @@ review:
 ## Advanced Concepts
 
 ### Typed Links and Knowledge Graphs
+
 **Motivation:** Un-typed backlinks bloat graphs and degrade signal. Typed links enforce intent and enable queries.
 
 **Practical Encoding:**
+
 ```yaml
 relationships:
   supports: []
@@ -240,6 +280,7 @@ relationships:
 ```
 
 **Link Types:**
+
 - supports, contradicts, extends, refines
 - part_of, depends_on, alternative_to
 - superseded_by
@@ -247,6 +288,7 @@ relationships:
 ### Maps of Content (MOCs) Design
 
 **Anatomy of a Good MOC:**
+
 - Purpose and scope statement
 - Key concepts
 - Curated pathways
@@ -255,6 +297,7 @@ relationships:
 - Last-reviewed date
 
 **Metrics:**
+
 - Coverage (proportion of relevant notes linked)
 - Navigability (avg clicks to reach key notes)
 - Recency (time since last update)
@@ -263,30 +306,37 @@ relationships:
 ## Lifecycle Workflows and Cadences
 
 ### Daily (15-30 minutes)
+
 - Capture in inbox (fleeting notes, tasks, highlights)
 - Triage to project/area or literature
 - Link-and-title pass
 - Seed 1 evergreen
 
 ### Weekly Review (90-120 minutes)
+
 **Projects:**
+
 - Clarify next actions (GTD)
 - Prune stale tasks
 
 **Knowledge:**
+
 - Promote 2–5 notes to evergreen
 - Update at least one MOC
 - Review orphan notes and link or archive
 
 **System Health:**
+
 - Report KPI snapshot (orphan rate, link density, time-to-retrieval samples)
 
 ### Monthly
+
 - Refactor one domain MOC
 - Consolidate duplicates
 - Archive one area's stale resources
 
 ### Quarterly
+
 - Taxonomy review (Johnny Decimal ranges, tag culls)
 - Backup and integrity checks
 - Publish a synthesis artifact
@@ -307,23 +357,29 @@ relationships:
 ## Synthesis Techniques for Experts
 
 ### Claims–Evidence Ledger
+
 Transform literature notes into claim statements linked to evidence notes. Track confidence per claim.
 
 ### Dialectical Pairing
+
 Create "contrasts-with" links and write reconciliations to reduce confirmation bias.
 
 ### Concept Stacking
+
 Build evergreen stack from low-level to high-level abstractions; each higher note explicitly lists dependencies.
 
 ### Narrative MOCs
+
 Convert MOC into story arc for presentations or essays; supports rapid publishing.
 
 ### Pattern Mining
+
 Quarterly export graph and compute communities/betweenness; inspect top hubs and gaps.
 
 ## Metrics and Evaluation
 
 ### Key Performance Indicators
+
 - **Retrieval Time (TTR):** Median time to locate item; target < 20 seconds for high-frequency items
 - **Reuse Rate:** % of new outputs that reuse at least one evergreen; target > 60% for research-heavy roles
 - **Link Density:** Average links per note (typed); aim for 3–10 depending on domain
@@ -334,12 +390,14 @@ Quarterly export graph and compute communities/betweenness; inspect top hubs and
 ## AI and Automation
 
 ### Practical Patterns
+
 - **Embedding Search:** Build local embedding index for semantic search
 - **Auto-link Suggestions:** Use embeddings + BM25 to suggest candidate links
 - **RAG Assistants:** Chat with vault through retrieval layer
 - **Summarization:** Batch summarize literature notes with progressive layers
 
 ### Cautions and Mitigations
+
 - **Model Drift:** Keep humans in the loop
 - **Hallucination:** Require citations to vault notes
 - **Privacy Leakage:** Use local models or providers with strong privacy terms
@@ -356,6 +414,7 @@ Quarterly export graph and compute communities/betweenness; inspect top hubs and
 ## 30/60/90-Day Adoption Plan
 
 ### 0–30 Days
+
 - Stand up vault/workspace
 - Implement PARA containers
 - Define note schema
@@ -364,6 +423,7 @@ Quarterly export graph and compute communities/betweenness; inspect top hubs and
 - Weekly reviews
 
 ### 31–60 Days
+
 - Introduce typed links
 - Convert top 30 notes to Evergreens
 - Integrate GTD task system
@@ -371,6 +431,7 @@ Quarterly export graph and compute communities/betweenness; inspect top hubs and
 - Instrument metrics
 
 ### 61–90 Days
+
 - Refactor one domain using Diátaxis
 - Begin AI-assisted link suggestions with provenance
 - Export graph, analyze hubs

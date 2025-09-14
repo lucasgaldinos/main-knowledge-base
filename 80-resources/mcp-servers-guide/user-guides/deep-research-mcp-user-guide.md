@@ -24,14 +24,14 @@ The Deep Research MCP server is a powerful AI-driven research automation tool th
 
 ## Table of Contents
 
-1. [Getting Started](#getting-started)
-2. [Core Features and Capabilities](#core-features-and-capabilities)
-3. [Academic Research Workflows](#academic-research-workflows)
-4. [Advanced Techniques](#advanced-techniques)
-5. [Integration with Research Tools](#integration-with-research-tools)
-6. [Best Practices](#best-practices)
-7. [Troubleshooting](#troubleshooting)
-8. [Tips and Tricks](#tips-and-tricks)
+1. [Getting Started](<#getting-started>)
+2. [Core Features and Capabilities](<#core-features-and-capabilities>)
+3. [Academic Research Workflows](<#academic-research-workflows>)
+4. [Advanced Techniques](<#advanced-techniques>)
+5. [Integration with Research Tools](<#integration-with-research-tools>)
+6. [Best Practices](<#best-practices>)
+7. [Troubleshooting](<#troubleshooting>)
+8. [Tips and Tricks](<#tips-and-tricks>)
 
 ## Getting Started
 

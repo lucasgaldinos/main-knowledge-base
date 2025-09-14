@@ -1,6 +1,108 @@
 {
-    "editor.formatOnSave": false,
-    // Terminal Profiles: Separate interactive and automation contexts
+    // === ACADEMIC WRITING OPTIMIZATIONS ===
+    "editor.formatOnSave": false, // Prevent conflicts with academic markdown
+    "editor.codeActionsOnSave": {
+        "source.fixAll.markdownlint": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    // Spell checking for academic content
+    "cSpell.enabled": true,
+    "cSpell.enableFiletypes": [
+        "markdown",
+        "yaml",
+        "python",
+        "json"
+    ],
+    "cSpell.customDictionaries": {
+        "academic-terms": {
+            "name": "Academic Terms",
+            "path": "${workspaceFolder}/.vscode/academic-dictionary.txt",
+            "description": "Academic and technical terms",
+            "scope": "workspace"
+        }
+    },
+    // === MARKDOWN OPTIMIZATIONS ===
+    "markdown.extension.toc.updateOnSave": true,
+    "markdown.extension.print.absoluteImgPath": false,
+    "markdown.extension.completion.respectVscodeSearchExclude": true,
+    "markdownlint.config": {
+        "MD013": false, // Line length flexibility for academic writing
+        "MD033": false, // Allow HTML in markdown for academic formatting
+        "MD041": false // First line doesn't need to be H1 (YAML frontmatter)
+    },
+    // === GITHUB COPILOT CONFIGURATION ===
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false, // Exclude academic metadata from Copilot
+        "plaintext": false, // Exclude plain text academic notes
+        "markdown": true // Enable for markdown but be selective
+    },
+    "editor.inlineSuggest.showToolbar": "always",
+    "github.copilot.editor.enableAutoCompletions": true,
+    // === ACADEMIC FILE ASSOCIATIONS ===
+    "files.associations": {
+        "*.md": "markdown",
+        "*.bib": "bibtex",
+        "*.cff": "yaml",
+        "*.frontmatter": "yaml"
+    },
+    // === SEARCH AND PERFORMANCE OPTIMIZATION ===
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/.next": true,
+        "**/.venv": true,
+        "**/30-data/**/*.db": true, // Exclude academic databases
+        "**/90-archive/**": true, // Exclude archived content
+        "**/*.cache": true,
+        "**/arxiv/cache.db": true,
+        "**/.git": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/node_modules/**": true,
+        "**/dist/**": true,
+        "**/.venv/**": true,
+        "**/30-data/**/*.db": true,
+        "**/90-archive/**": true
+    },
+    // === PYTHON DEVELOPMENT ===
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "black",
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    "python.testing.pytestArgs": [
+        "scripts/",
+        "40-code/"
+    ],
+    // === GIT AND VERSION CONTROL ===
+    "git.autofetch": true,
+    "git.pruneOnFetch": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    // === WORKSPACE TRUST AND SECURITY ===
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "security.workspace.trust.banner": "always",
+    // === FILE MANAGEMENT ===
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    // === EDITOR ENHANCEMENTS ===
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.stickyScroll.enabled": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.revealIfOpen": true,
+    // === TERMINAL PROFILES ===
     "terminal.integrated.profiles.linux": {
         "Bash (interactive)": {
             "path": "/bin/bash",
@@ -38,11 +140,26 @@
             "env": {
                 "IN_CONTAINER": "1"
             }
+        },
+        "Academic Workflow": {
+            "path": "/bin/bash",
+            "args": [
+                "-l",
+                "-c",
+                "source ${workspaceFolder}/.vscode/academic-profile.sh && bash"
+            ],
+            "icon": "book",
+            "color": "terminal.ansiCyan",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}",
+                "ACADEMIC_MODE": "1",
+                "WORKSPACEFOLDER": "${workspaceFolder}"
+            }
         }
     },
     // Default profile for interactive work
-    "terminal.integrated.defaultProfile.linux": "bash",
-    // Automation profile for tasks and debugging (replaces legacy automationShell)
+    "terminal.integrated.defaultProfile.linux": "Bash (interactive)",
+    // Automation profile for tasks and debugging
     "terminal.integrated.automationProfile.linux": {
         "path": "/bin/bash",
         "args": [
@@ -58,14 +175,12 @@
             "LC_ALL": "C"
         }
     },
-    // Shell integration for command detection, history, and decorations
+    // === TERMINAL ENHANCEMENTS ===
     "terminal.integrated.enableShellIntegration": true,
-    // Performance and UX optimizations
     "terminal.integrated.scrollback": 20000,
     "terminal.integrated.enablePersistentSessions": true,
     "terminal.integrated.tabs.enabled": true,
     "terminal.integrated.allowChords": true,
-    // "terminal.integrated.fontFamily": "FiraCode Nerd Font, 'Courier New', monospace",
     // Auto-replies for common automation prompts
     "terminal.integrated.autoReplies": {
         "Do you want to continue\\? \\[Y/n\\]": "Y",
@@ -73,7 +188,7 @@
         "Continue\\? \\[y/N\\]": "y",
         "Are you sure\\? \\[y/N\\]": "y"
     },
-    // Keep essential VS Code keybindings, forward rest to terminal
+    // Keep essential VS Code keybindings
     "terminal.integrated.commandsToSkipShell": [
         "workbench.action.quickOpen",
         "workbench.action.terminal.focusFind",
@@ -81,5 +196,37 @@
         "workbench.action.terminal.clear",
         "workbench.action.tasks.runTask",
         "workbench.action.terminal.toggleTerminal"
-    ]
+    ],
+    // === ACADEMIC WORKFLOW OPTIMIZATIONS ===
+    "todo-tree.highlights.enabled": true,
+    "todo-tree.highlights.defaultHighlight": {
+        "icon": "alert",
+        "type": "text",
+        "foreground": "red",
+        "background": "white",
+        "opacity": 50,
+        "iconColour": "blue"
+    },
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "icon": "check",
+            "foreground": "white",
+            "background": "orange"
+        },
+        "FIXME": {
+            "icon": "bug",
+            "foreground": "white",
+            "background": "red"
+        },
+        "NOTE": {
+            "icon": "note",
+            "foreground": "white",
+            "background": "blue"
+        },
+        "RESEARCH": {
+            "icon": "book",
+            "foreground": "white",
+            "background": "purple"
+        }
+    }
 }

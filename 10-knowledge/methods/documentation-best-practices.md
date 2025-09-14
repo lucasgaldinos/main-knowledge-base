@@ -15,16 +15,16 @@ This comprehensive guide provides enterprise-grade principles, frameworks, and i
 
 ## Table of Contents
 
-1. [Core Principles](#core-principles)
-2. [Documentation Architecture (Diátaxis)](#documentation-architecture-diátaxis)
-3. [Docs-as-Code Methodology](#docs-as-code-methodology)
-4. [Modern Documentation Frameworks](#modern-documentation-frameworks)
-5. [Sphinx-Style Documentation](#sphinx-style-documentation)
-6. [Quality Assurance and Testing](#quality-assurance-and-testing)
-7. [Governance and Standards](#governance-and-standards)
-8. [Implementation Roadmap](#implementation-roadmap)
-9. [Tool-Specific Guidance](#tool-specific-guidance)
-10. [Maintenance and Evolution](#maintenance-and-evolution)
+1. [Core Principles](<#core-principles>)
+2. [Documentation Architecture (Diátaxis)](<#documentation-architecture-diátaxis>)
+3. [Docs-as-Code Methodology](<#docs-as-code-methodology>)
+4. [Modern Documentation Frameworks](<#modern-documentation-frameworks>)
+5. [Sphinx-Style Documentation](<#sphinx-style-documentation>)
+6. [Quality Assurance and Testing](<#quality-assurance-and-testing>)
+7. [Governance and Standards](<#governance-and-standards>)
+8. [Implementation Roadmap](<#implementation-roadmap>)
+9. [Tool-Specific Guidance](<#tool-specific-guidance>)
+10. [Maintenance and Evolution](<#maintenance-and-evolution>)
 
 ## Core Principles
 
@@ -850,5 +850,5 @@ The investment in documentation infrastructure pays dividends through reduced su
 - [WCAG 2.1 Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 - [Sphinx Documentation](https://www.sphinx-doc.org/)
 - [MkDocs Material](https://squidfunk.github.io/mkdocs-material/)
-- [Testing Best Practices](./testing-comprehensive-guide.md)
+- [Testing Best Practices](<./testing-comprehensive-guide.md>)
 - [VS Code Copilot Guide](./vscode-copilot-complete-guide.md)

@@ -35,19 +35,19 @@ This guide covers enterprise-grade GitHub Copilot customization for Visual Studi
 
 ## Table of Contents
 
-1. [2025 Features & MCP Integration](#2025-features--mcp-integration)
-2. [Enterprise Configuration](#enterprise-configuration)
-3. [Basic Configuration](#basic-configuration)
-4. [Advanced Settings](#advanced-settings)
-5. [Language-Specific Customization](#language-specific-customization)
-6. [Agent Mode & Chat Integration](#agent-mode--chat-integration)
-7. [Keybindings and Shortcuts](#keybindings-and-shortcuts)
-8. [Workflow Integration](#workflow-integration)
-9. [Performance Optimization](#performance-optimization)
-10. [Security & Compliance](#security--compliance)
-11. [Troubleshooting](#troubleshooting)
-12. [Best Practices](#best-practices)
-13. [Productivity Research Insights](#productivity-research-insights)
+1. [2025 Features & MCP Integration](<#2025-features--mcp-integration>)
+2. [Enterprise Configuration](<#enterprise-configuration>)
+3. [Basic Configuration](<#basic-configuration>)
+4. [Advanced Settings](<#advanced-settings>)
+5. [Language-Specific Customization](<#language-specific-customization>)
+6. [Agent Mode & Chat Integration](<#agent-mode--chat-integration>)
+7. [Keybindings and Shortcuts](<#keybindings-and-shortcuts>)
+8. [Workflow Integration](<#workflow-integration>)
+9. [Performance Optimization](<#performance-optimization>)
+10. [Security & Compliance](<#security--compliance>)
+11. [Troubleshooting](<#troubleshooting>)
+12. [Best Practices](<#best-practices>)
+13. [Productivity Research Insights](<#productivity-research-insights>)
 
 ## 2025 Features & MCP Integration
 

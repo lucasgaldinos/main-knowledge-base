@@ -17,11 +17,11 @@ This section contains documentation for specific projects, their outcomes, and l
 
 ## Current Projects
 
-- [AI Agent Toolsets Implementation Completion Report](ai-agent-toolsets-implementation-completion-report.md) - Comprehensive AI agent configuration with VS Code Copilot and MCP integration
-- [Academic Research Platform System Design](academic-research-platform-system-design.md)
-- [ArXiv MCP Enhanced Design](arxiv-mcp-enhanced-design.md)
-- [ArXiv MCP Enhancement Completion Report](arxiv-mcp-enhancement-completion-report.md)
-- [Copilot PDF Processing Workflow Design](copilot-pdf-processing-workflow-design-202508271745.md)
+- [AI Agent Toolsets Implementation Completion Report](<./ai-agent-toolsets-implementation-completion-report.md>) - Comprehensive AI agent configuration with VS Code Copilot and MCP integration
+- [Academic Research Platform System Design](<./academic-research-platform-system-design.md>)
+- [ArXiv MCP Enhanced Design](<./arxiv-mcp-enhanced-design.md>)
+- [ArXiv MCP Enhancement Completion Report](<./arxiv-mcp-enhancement-completion-report.md>)
+- [Copilot PDF Processing Workflow Design](<../../../../copilot-pdf-processing-workflow-design-202508271745.md>)
 
 ## Project Documentation Structure
 

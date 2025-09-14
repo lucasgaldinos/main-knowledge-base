@@ -21,5 +21,5 @@ Preserves historical project documentation while maintaining organized structure
 
 ## Related
 
-- [Current Projects](../README.md)
+- [Current Projects](<../README.md>)
 - [Project Reports Overview](../)

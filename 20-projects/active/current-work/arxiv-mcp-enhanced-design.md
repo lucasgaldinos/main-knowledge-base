@@ -25,14 +25,14 @@ This document presents the enhanced design specification for ArXiv-MCP integrati
 
 ## Table of Contents
 
-1. [Enhanced Architecture Overview](#enhanced-architecture-overview)
-2. [Core System Improvements](#core-system-improvements)
-3. [Advanced Feature Set](#advanced-feature-set)
-4. [Academic Workflow Integration](#academic-workflow-integration)
-5. [Performance Optimization Strategy](#performance-optimization-strategy)
-6. [Security and Compliance Framework](#security-and-compliance-framework)
-7. [Implementation Roadmap](#implementation-roadmap)
-8. [Quality Assurance and Testing](#quality-assurance-and-testing)
+1. [Enhanced Architecture Overview](<#enhanced-architecture-overview>)
+2. [Core System Improvements](<#core-system-improvements>)
+3. [Advanced Feature Set](<#advanced-feature-set>)
+4. [Academic Workflow Integration](<#academic-workflow-integration>)
+5. [Performance Optimization Strategy](<#performance-optimization-strategy>)
+6. [Security and Compliance Framework](<#security-and-compliance-framework>)
+7. [Implementation Roadmap](<#implementation-roadmap>)
+8. [Quality Assurance and Testing](<#quality-assurance-and-testing>)
 
 ## Enhanced Architecture Overview
 

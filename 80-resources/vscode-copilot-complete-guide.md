@@ -15,16 +15,16 @@ This comprehensive guide provides enterprise-grade patterns, best practices, and
 
 ## Table of Contents
 
-1. [Mental Model and Context Understanding](#mental-model-and-context-understanding)
-2. [Custom Instructions Best Practices](#custom-instructions-best-practices)
-3. [Prompt Engineering Patterns](#prompt-engineering-patterns)
-4. [Agent Toolset Configuration](#agent-toolset-configuration)
-5. [MCP Integration Workflows](#mcp-integration-workflows)
-6. [Documentation and Team Standards](#documentation-and-team-standards)
-7. [Professional Workflows](#professional-workflows)
-8. [Security and Governance](#security-and-governance)
-9. [Examples and Templates](#examples-and-templates)
-10. [Metrics and Continuous Improvement](#metrics-and-continuous-improvement)
+1. [Mental Model and Context Understanding](<#mental-model-and-context-understanding>)
+2. [Custom Instructions Best Practices](<#custom-instructions-best-practices>)
+3. [Prompt Engineering Patterns](<#prompt-engineering-patterns>)
+4. [Agent Toolset Configuration](<#agent-toolset-configuration>)
+5. [MCP Integration Workflows](<#mcp-integration-workflows>)
+6. [Documentation and Team Standards](<#documentation-and-team-standards>)
+7. [Professional Workflows](<#professional-workflows>)
+8. [Security and Governance](<#security-and-governance>)
+9. [Examples and Templates](<#examples-and-templates>)
+10. [Metrics and Continuous Improvement](<#metrics-and-continuous-improvement>)
 
 ## Mental Model and Context Understanding
 

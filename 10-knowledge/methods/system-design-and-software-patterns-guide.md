@@ -24,14 +24,14 @@ This guide provides comprehensive coverage of system design principles, software
 
 ## Table of Contents
 
-1. [System Design Fundamentals](#system-design-fundamentals)
-2. [Architectural Patterns](#architectural-patterns)
-3. [Distributed Systems Design](#distributed-systems-design)
-4. [Academic Research Platform Patterns](#academic-research-platform-patterns)
-5. [Implementation Strategies](#implementation-strategies)
-6. [Quality Assurance and Testing](#quality-assurance-and-testing)
-7. [Performance and Scalability](#performance-and-scalability)
-8. [Security and Compliance](#security-and-compliance)
+1. [System Design Fundamentals](<#system-design-fundamentals>)
+2. [Architectural Patterns](<#architectural-patterns>)
+3. [Distributed Systems Design](<#distributed-systems-design>)
+4. [Academic Research Platform Patterns](<#academic-research-platform-patterns>)
+5. [Implementation Strategies](<#implementation-strategies>)
+6. [Quality Assurance and Testing](<#quality-assurance-and-testing>)
+7. [Performance and Scalability](<#performance-and-scalability>)
+8. [Security and Compliance](<#security-and-compliance>)
 
 ## System Design Fundamentals
 

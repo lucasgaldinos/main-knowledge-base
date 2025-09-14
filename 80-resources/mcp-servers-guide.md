@@ -23,18 +23,18 @@ A comprehensive guide to Model Context Protocol (MCP) servers, covering implemen
 
 ## Table of Contents
 
-1. [Overview](#overview)
-2. [MCP Protocol Fundamentals](#mcp-protocol-fundamentals)
-3. [Server Architecture](#server-architecture)
-4. [Available MCP Servers](#available-mcp-servers)
-5. [Development Environment Setup](#development-environment-setup)
-6. [Custom Server Development](#custom-server-development)
-7. [Implementation Patterns](#implementation-patterns)
-8. [Configuration Management](#configuration-management)
-9. [Deployment Strategies](#deployment-strategies)
-10. [Best Practices](#best-practices)
-11. [Troubleshooting](#troubleshooting)
-12. [Resources and References](#resources-and-references)
+1. [Overview](<#overview>)
+2. [MCP Protocol Fundamentals](<#mcp-protocol-fundamentals>)
+3. [Server Architecture](<#server-architecture>)
+4. [Available MCP Servers](<#available-mcp-servers>)
+5. [Development Environment Setup](<#development-environment-setup>)
+6. [Custom Server Development](<#custom-server-development>)
+7. [Implementation Patterns](<#implementation-patterns>)
+8. [Configuration Management](<#configuration-management>)
+9. [Deployment Strategies](<#deployment-strategies>)
+10. [Best Practices](<#best-practices>)
+11. [Troubleshooting](<#troubleshooting>)
+12. [Resources and References](<#resources-and-references>)
 
 ## Overview
 

@@ -17,7 +17,7 @@ This section contains reference materials for quick lookup and consultation duri
 
 ## Current Materials
 
-- [Enhanced Knowledge Base Organization](enhanced-knowledge-base-organization.md)
+- [Enhanced Knowledge Base Organization](<./enhanced-knowledge-base-organization.md>)
 - [Workspace Organization Best Practices](../../folder-organization/workspace-organization-best-practices.md)
 
 ## Types of Reference Materials

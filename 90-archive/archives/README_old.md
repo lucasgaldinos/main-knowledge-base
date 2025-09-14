@@ -55,7 +55,7 @@ This knowledge base follows **function-based organization** as recommended by in
 
 ## 🤝 **Contributing**
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on:
+See [CONTRIBUTING.md](<../../CONTRIBUTING.md>) for detailed guidelines on:
 
 - Content organization standards
 - Document structure requirements

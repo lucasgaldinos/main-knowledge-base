@@ -17,7 +17,7 @@ This section contains research-oriented content including academic papers, liter
 
 ## Current Research Materials
 
-- [ArXiv Parallel Processing Research](arxiv-parallel-processing-research.md)
+- [ArXiv Parallel Processing Research](<../../../80-resources/arxiv-parallel-processing-research.md>)
 
 ## Types of Research Content
 

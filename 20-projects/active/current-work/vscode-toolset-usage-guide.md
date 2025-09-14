@@ -24,14 +24,14 @@ This comprehensive guide provides detailed instructions for effectively using th
 
 ## Table of Contents
 
-1. [Quick Start](#quick-start)
-2. [Toolset Overview](#toolset-overview)
-3. [Configuration Hierarchy](#configuration-hierarchy)
-4. [Individual Toolset Guides](#individual-toolset-guides)
-5. [Workflow Integration](#workflow-integration)
-6. [Advanced Techniques](#advanced-techniques)
-7. [Troubleshooting](#troubleshooting)
-8. [Best Practices](#best-practices)
+1. [Quick Start](<#quick-start>)
+2. [Toolset Overview](<#toolset-overview>)
+3. [Configuration Hierarchy](<#configuration-hierarchy>)
+4. [Individual Toolset Guides](<#individual-toolset-guides>)
+5. [Workflow Integration](<#workflow-integration>)
+6. [Advanced Techniques](<#advanced-techniques>)
+7. [Troubleshooting](<#troubleshooting>)
+8. [Best Practices](<#best-practices>)
 
 ## Quick Start
 

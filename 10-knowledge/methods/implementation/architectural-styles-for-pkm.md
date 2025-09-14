@@ -658,6 +658,7 @@ The Diátaxis documentation framework, originally developed by Daniele Procida f
 #### 10.1 The Four Diátaxis Categories in PKM Context
 
 **Tutorials (Learning-Oriented)**
+
 - **Purpose:** Step-by-step guides for your future self to learn a new skill or concept
 - **PKM Examples:**
   - "Setting up a new research workflow in Obsidian"
@@ -666,6 +667,7 @@ The Diátaxis documentation framework, originally developed by Daniele Procida f
 - **Implementation:** These become evergreen how-to notes with clear prerequisites, steps, and outcomes
 
 **How-To Guides (Problem-Oriented)**
+
 - **Purpose:** Goal-oriented checklists and procedures for achieving specific objectives
 - **PKM Examples:**
   - "How to conduct a literature review for academic research"
@@ -674,6 +676,7 @@ The Diátaxis documentation framework, originally developed by Daniele Procida f
 - **Implementation:** Action-oriented notes with clear goals, assumptions, and step-by-step procedures
 
 **Explanations (Understanding-Oriented)**
+
 - **Purpose:** Conceptual descriptions that illuminate the "why" behind ideas and systems
 - **PKM Examples:**
   - "Why typed links reduce graph entropy in knowledge management"
@@ -682,6 +685,7 @@ The Diátaxis documentation framework, originally developed by Daniele Procida f
 - **Implementation:** Conceptual evergreen notes focused on clarifying understanding rather than providing instructions
 
 **Reference (Information-Oriented)**
+
 - **Purpose:** Canonical facts, APIs, commands, formulas, and lookup information
 - **PKM Examples:**
   - "Obsidian keyboard shortcuts reference"
@@ -731,11 +735,12 @@ Building on the deep research findings, this section provides concrete implement
 Obsidian's plugin ecosystem makes it ideal for implementing sophisticated hybrid systems. Here's a battle-tested configuration combining PARA, Zettelkasten, MOCs, and Diátaxis:
 
 **Folder Structure:**
+
 ```
 /
 ├── 00-Inbox/              # Capture zone
 ├── 10-Projects/           # PARA Projects
-├── 20-Areas/              # PARA Areas  
+├── 20-Areas/              # PARA Areas
 ├── 30-Resources/          # PARA Resources
 ├── 40-Archive/            # PARA Archive
 ├── 50-Zettelkasten/       # Atomic evergreen notes
@@ -746,6 +751,7 @@ Obsidian's plugin ecosystem makes it ideal for implementing sophisticated hybrid
 ```
 
 **Essential Plugins and Configuration:**
+
 - **Dataview:** Query and organize notes dynamically
 - **Templater:** Automate note creation with consistent metadata
 - **Periodic Notes:** Daily/weekly review cycles
@@ -753,6 +759,7 @@ Obsidian's plugin ecosystem makes it ideal for implementing sophisticated hybrid
 - **Admonition:** Clear visual organization for Diátaxis categories
 
 **Metadata Schema (YAML Frontmatter):**
+
 ```yaml
 ---
 title: "Atomic, declarative title"
@@ -778,6 +785,7 @@ review_date: 2025-12-14
 Notion's relational database capabilities make it excellent for PARA + MOC hybrids with strong project integration:
 
 **Core Databases:**
+
 1. **Notes Database:** All knowledge content with rich metadata
 2. **Projects Database:** PARA projects with status tracking
 3. **Areas Database:** PARA areas with responsibility mapping
@@ -786,12 +794,14 @@ Notion's relational database capabilities make it excellent for PARA + MOC hybri
 6. **Tasks Database:** GTD-style action management
 
 **Key Relations:**
+
 - Notes ↔ Projects (many-to-many)
 - Notes ↔ MOCs (many-to-many)
 - Projects ↔ Areas (many-to-one)
 - Tasks ↔ Notes (many-to-many)
 
 **Dashboard Views:**
+
 - **Weekly Review Dashboard:** Shows projects, overdue tasks, and notes needing review
 - **Knowledge Dashboard:** Displays MOCs, recent evergreens, and orphaned notes
 - **Research Dashboard:** Literature notes, claims, and evidence tracking
@@ -801,12 +811,14 @@ Notion's relational database capabilities make it excellent for PARA + MOC hybri
 Roam's block-based structure enables unique implementations of networked thought:
 
 **Core Structure:**
+
 - **Daily Notes:** Capture and processing center
 - **Concept Pages:** Atomic ideas with block-level granularity
 - **MOC Pages:** Curated collections using block references
 - **Project Pages:** Time-bound work with embedded tasks
 
 **Advanced Patterns:**
+
 - **Block References for Claims:** Link to specific evidence blocks across notes
 - **Nested Tags:** Use `#concept/subtopic` for hierarchical organization
 - **Queries for Dynamic MOCs:** Auto-generate content lists based on attributes
@@ -817,16 +829,19 @@ Roam's block-based structure enables unique implementations of networked thought
 #### 12.1 Daily Workflows (15-30 minutes)
 
 **Capture Phase (5-10 minutes):**
+
 - Process inbox items from various sources
 - Create fleeting notes for new ideas
 - Add quick links to existing relevant notes
 
 **Triage Phase (10-15 minutes):**
+
 - Classify fleeting notes by type and urgency
-- Move actionable items to appropriate PARA categories  
+- Move actionable items to appropriate PARA categories
 - Identify candidates for atomic note creation
 
 **Connect Phase (5-10 minutes):**
+
 - Add at least 2-3 links to new notes
 - Update one MOC with recent related content
 - Review and strengthen one existing connection
@@ -834,21 +849,25 @@ Roam's block-based structure enables unique implementations of networked thought
 #### 12.2 Weekly Review Cycles (90-120 minutes)
 
 **Projects and Actions (30 minutes):**
+
 - Review all active projects for next actions
 - Archive completed projects and extract insights
 - Update area responsibilities and standards
 
 **Knowledge Processing (45 minutes):**
+
 - Promote 3-5 fleeting notes to evergreen status
 - Refactor one domain MOC for clarity and completeness
 - Identify and resolve duplicate or conflicting content
 
 **System Health (15 minutes):**
+
 - Run orphan note queries and link or archive
 - Check for overdue review dates
 - Update metadata consistency and controlled vocabulary
 
 **Synthesis Planning (20 minutes):**
+
 - Identify synthesis opportunities from recent work
 - Plan one output project (blog post, presentation, report)
 - Update long-term learning and research goals
@@ -856,16 +875,19 @@ Roam's block-based structure enables unique implementations of networked thought
 #### 12.3 Monthly Optimization (2-3 hours)
 
 **Structural Review:**
+
 - Analyze note creation patterns and adjust templates
 - Review and optimize MOC structure and coverage
 - Consolidate or split overgrown categories
 
 **Content Quality:**
+
 - Deep review of one major domain for accuracy and completeness
 - Update claims with new evidence or change confidence ratings
 - Archive or merge low-value content
 
 **Tool and Process Enhancement:**
+
 - Experiment with new plugins, queries, or automation
 - Optimize templates and metadata schema
 - Test and refine capture and processing workflows
@@ -875,16 +897,19 @@ Roam's block-based structure enables unique implementations of networked thought
 #### 13.1 Key Performance Indicators for PKM Systems
 
 **Retrieval Efficiency Metrics:**
+
 - **Time to Retrieve (TTR):** Average seconds to find specific information
 - **Success Rate:** Percentage of searches that find the target information
 - **Path Length:** Average number of clicks/links to reach target content
 
 **Knowledge Utilization Metrics:**
+
 - **Reuse Rate:** Percentage of new content that references existing notes
 - **Link Density:** Average number of connections per note
 - **Synthesis Velocity:** Time from research to published output
 
 **System Health Metrics:**
+
 - **Orphan Rate:** Percentage of notes with no incoming links
 - **Staleness Index:** Percentage of notes past their review date
 - **Coverage Ratio:** Proportion of active domains with dedicated MOCs
@@ -892,18 +917,21 @@ Roam's block-based structure enables unique implementations of networked thought
 #### 13.2 Optimization Strategies
 
 **For High TTR (Slow Retrieval):**
+
 - Improve MOC navigation and hub design
 - Enhance metadata consistency and searchability
 - Create more granular tags and aliases
 - Implement better naming conventions
 
 **For Low Reuse Rates:**
+
 - Strengthen weekly review processes
 - Improve atomic note quality and discoverability
 - Create more synthesis-oriented MOCs
 - Develop project-to-knowledge refactoring habits
 
 **For High Orphan Rates:**
+
 - Implement link-first creation workflows
 - Regularly review and connect isolated content
 - Use tools like graph analysis to identify connection opportunities
@@ -914,21 +942,25 @@ Roam's block-based structure enables unique implementations of networked thought
 #### 14.1 AI-Assisted PKM Patterns
 
 **Semantic Search Enhancement:**
+
 - Local embedding indexes for concept-based discovery
 - Hybrid search combining keywords and semantic similarity
 - Cross-lingual concept matching for multilingual knowledge bases
 
 **Automated Link Suggestions:**
+
 - ML-powered relationship recommendations based on content similarity
 - Context-aware link proposals during note creation
 - Periodic "link discovery" sessions for existing content
 
 **Content Generation Support:**
+
 - AI-assisted note summaries and abstractions
 - Automated MOC generation with human curation
 - Template completion and metadata suggestion
 
 **Quality Assurance:**
+
 - Automated detection of orphaned or stale content
 - Consistency checking for metadata and formatting
 - Duplicate content identification and merge suggestions
@@ -936,16 +968,19 @@ Roam's block-based structure enables unique implementations of networked thought
 #### 14.2 Provenance and Trust Frameworks
 
 **Source Tracking:**
+
 - Comprehensive citation management with confidence scores
 - Chain of reasoning documentation for derived insights
 - Version control for evolving understanding and claims
 
 **AI Audit Trails:**
+
 - Log all AI-generated suggestions and their acceptance/rejection
 - Maintain model version and prompt information for generated content
 - Enable rollback of AI-influenced changes
 
 **Human-in-the-Loop Safeguards:**
+
 - Require manual approval for structural changes
 - Maintain human editorial control over synthesis and claims
 - Implement graduated trust levels for different types of AI assistance

@@ -15,14 +15,14 @@ This guide provides comprehensive strategies for configuring VS Code GitHub Copi
 
 ## Table of Contents
 
-1. [Agent Mode Configuration](#agent-mode-configuration)
-2. [Custom Toolsets Architecture](#custom-toolsets-architecture)
-3. [MCP Server Integration](#mcp-server-integration)
-4. [AI Agent Workflows](#ai-agent-workflows)
-5. [Advanced Orchestration Patterns](#advanced-orchestration-patterns)
-6. [Security and Governance](#security-and-governance)
-7. [Best Practices and Optimization](#best-practices-and-optimization)
-8. [Troubleshooting and Debugging](#troubleshooting-and-debugging)
+1. [Agent Mode Configuration](<#agent-mode-configuration>)
+2. [Custom Toolsets Architecture](<#custom-toolsets-architecture>)
+3. [MCP Server Integration](<#mcp-server-integration>)
+4. [AI Agent Workflows](<#ai-agent-workflows>)
+5. [Advanced Orchestration Patterns](<#advanced-orchestration-patterns>)
+6. [Security and Governance](<#security-and-governance>)
+7. [Best Practices and Optimization](<#best-practices-and-optimization>)
+8. [Troubleshooting and Debugging](<#troubleshooting-and-debugging>)
 
 ## Agent Mode Configuration
 
@@ -1166,6 +1166,6 @@ This comprehensive AI Agents and Toolsets Configuration Guide provides enterpris
 ## Related Resources
 
 - [VS Code Copilot Complete Guide](../tools/vscode-copilot-complete-guide.md)
-- [MCP Integration Workflows](./mcp-integration-workflows.md)
-- [Documentation Best Practices](./documentation-best-practices.md)
-- [Testing Comprehensive Guide](./testing-comprehensive-guide.md)
+- [MCP Integration Workflows](<./mcp-integration-workflows.md>)
+- [Documentation Best Practices](<./documentation-best-practices.md>)
+- [Testing Comprehensive Guide](<./testing-comprehensive-guide.md>)

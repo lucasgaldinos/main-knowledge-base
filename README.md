@@ -168,7 +168,7 @@ mkdir projects/active/your-project-name
 
 ## 📋 **Academic Standards & Governance**
 
-This knowledge base follows rigorous academic standards defined in [`GOVERNANCE.md`](GOVERNANCE.md):
+This knowledge base follows rigorous academic standards defined in [GOVERNANCE.md](<./GOVERNANCE.md>):
 
 ### **Quality Assurance**
 
@@ -238,7 +238,7 @@ Following the comprehensive tools reference methodology:
 
 ### **Academic Contribution Standards**
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on:
+See [CONTRIBUTING.md](<./CONTRIBUTING.md>) for detailed guidelines on:
 
 - Content organization standards
 - Document structure requirements

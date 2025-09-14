@@ -1,0 +1,69 @@
+[
+    // Academic Workflow Keybindings
+    {
+        "key": "ctrl+shift+a",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Academic: Validate Structure",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Academic: Fix YAML Frontmatter",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Academic: Full Maintenance Workflow",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Python: Test Academic Scripts",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Academic: Deep Research Workflow",
+        "when": "!terminalFocus"
+    },
+    // Quick access to academic terminal
+    {
+        "key": "ctrl+shift+`",
+        "command": "workbench.action.terminal.newWithProfile",
+        "args": {
+            "profileName": "Academic Workflow"
+        }
+    },
+    // Enhanced Markdown editing
+    {
+        "key": "ctrl+shift+v",
+        "command": "markdown.showPreviewToSide",
+        "when": "editorLangId == markdown"
+    },
+    {
+        "key": "ctrl+k v",
+        "command": "markdown.showPreview",
+        "when": "editorLangId == markdown"
+    },
+    // Copilot academic usage
+    {
+        "key": "ctrl+alt+i",
+        "command": "github.copilot.interactiveEditor.explain",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+d",
+        "command": "github.copilot.interactiveEditor.generateDocs",
+        "when": "editorTextFocus"
+    },
+    // File navigation
+    {
+        "key": "ctrl+shift+o",
+        "command": "workbench.action.quickOpen",
+        "args": "@:"
+    }
+]

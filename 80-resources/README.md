@@ -15,16 +15,16 @@ This comprehensive guide provides enterprise-grade patterns, architectures, and 
 
 ## Table of Contents
 
-1. [Introduction to MCP Servers](#introduction-to-mcp-servers)
-2. [Enterprise Architecture Patterns](#enterprise-architecture-patterns)
-3. [Security Framework](#security-framework)
-4. [Multi-Agent Orchestration](#multi-agent-orchestration)
-5. [Governance and Compliance](#governance-and-compliance)
-6. [Implementation Strategies](#implementation-strategies)
-7. [Operational Excellence](#operational-excellence)
-8. [Reference Architecture](#reference-architecture)
-9. [Best Practices and Anti-Patterns](#best-practices-and-anti-patterns)
-10. [Implementation Roadmap](#implementation-roadmap)
+1. [Introduction to MCP Servers](<#introduction-to-mcp-servers>)
+2. [Enterprise Architecture Patterns](<#enterprise-architecture-patterns>)
+3. [Security Framework](<#security-framework>)
+4. [Multi-Agent Orchestration](<#multi-agent-orchestration>)
+5. [Governance and Compliance](<#governance-and-compliance>)
+6. [Implementation Strategies](<#implementation-strategies>)
+7. [Operational Excellence](<#operational-excellence>)
+8. [Reference Architecture](<#reference-architecture>)
+9. [Best Practices and Anti-Patterns](<#best-practices-and-anti-patterns>)
+10. [Implementation Roadmap](<#implementation-roadmap>)
 
 ## Introduction to MCP Servers
 

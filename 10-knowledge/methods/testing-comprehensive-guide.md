@@ -2285,7 +2285,7 @@ This comprehensive testing guide provides enterprise-grade strategies for both P
 
 ## Related Resources
 
-- [Documentation Best Practices](./documentation-best-practices.md)
+- [Documentation Best Practices](<./documentation-best-practices.md>)
 - [pytest Documentation](https://docs.pytest.org/)
 - [Jest Documentation](https://jestjs.io/docs/getting-started)
 - [Playwright Documentation](https://playwright.dev/)

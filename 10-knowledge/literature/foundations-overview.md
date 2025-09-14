@@ -15,16 +15,16 @@ This document establishes the foundational framework for understanding, organizi
 
 ## Table of Contents
 
-1. [Core Foundations](#core-foundations)
-2. [Knowledge Architecture Principles](#knowledge-architecture-principles)
-3. [Foundational AI Concepts](#foundational-ai-concepts)
-4. [Organizational Knowledge Frameworks](#organizational-knowledge-frameworks)
-5. [Information Architecture Foundations](#information-architecture-foundations)
-6. [Knowledge Management Methodologies](#knowledge-management-methodologies)
-7. [Enterprise Integration Principles](#enterprise-integration-principles)
-8. [Quality and Governance Framework](#quality-and-governance-framework)
-9. [Implementation Philosophy](#implementation-philosophy)
-10. [Foundational Resources and Navigation](#foundational-resources-and-navigation)
+1. [Core Foundations](<#core-foundations>)
+2. [Knowledge Architecture Principles](<#knowledge-architecture-principles>)
+3. [Foundational AI Concepts](<#foundational-ai-concepts>)
+4. [Organizational Knowledge Frameworks](<#organizational-knowledge-frameworks>)
+5. [Information Architecture Foundations](<#information-architecture-foundations>)
+6. [Knowledge Management Methodologies](<#knowledge-management-methodologies>)
+7. [Enterprise Integration Principles](<#enterprise-integration-principles>)
+8. [Quality and Governance Framework](<#quality-and-governance-framework>)
+9. [Implementation Philosophy](<#implementation-philosophy>)
+10. [Foundational Resources and Navigation](<#foundational-resources-and-navigation>)
 
 ## Core Foundations
 

@@ -14,28 +14,36 @@ This document tracks the different git branches created to demonstrate various P
 ## Branch Details
 
 ### pkm-para-style
+
 **Implementation**: `PKM-PARA-IMPLEMENTATION.md`
+
 - **Focus**: Actionability-based organization
 - **Structure**: Clear lifecycle management (Projects → Areas → Resources → Archives)
 - **Best For**: Project-driven work, operational efficiency
 - **Key Benefit**: Reduces "where does this go?" friction
 
-### pkm-zettelkasten-style  
+### pkm-zettelkasten-style
+
 **Implementation**: `PKM-ZETTELKASTEN-IMPLEMENTATION.md`
+
 - **Focus**: Atomic concepts with networked connections
 - **Structure**: Timestamp-based IDs, permanent notes, literature processing
 - **Best For**: Research, synthesis, long-term knowledge building
 - **Key Benefit**: Emergent insights through connection discovery
 
 ### pkm-johnny-decimal-style
+
 **Implementation**: `PKM-JOHNNY-DECIMAL-IMPLEMENTATION.md`
+
 - **Focus**: Stable numerical addressing
 - **Structure**: 10 Areas, 10 Categories per Area, unique item IDs
 - **Best For**: Reference materials, team coordination, stable addressing
 - **Key Benefit**: Deterministic location and unambiguous communication
 
 ### pkm-lyt-moc-style
+
 **Implementation**: `PKM-LYT-MOC-IMPLEMENTATION.md`
+
 - **Focus**: Flexible structure with curated navigation
 - **Structure**: Maps of Content as hubs, fluid categorization
 - **Best For**: Creative synthesis, multiple contexts, organic growth
@@ -62,6 +70,7 @@ git checkout main
 ## Implementation Files
 
 Each branch contains a comprehensive implementation guide:
+
 - Philosophical principles
 - Directory structure
 - Workflow processes
@@ -74,12 +83,14 @@ Each branch contains a comprehensive implementation guide:
 Based on our actor-critic evaluation, the recommended approach for our current system is:
 
 ### Pragmatic Hybrid Implementation
+
 1. **Minimal Diátaxis Enhancement**: Add Tutorial/How-To/Explanation/Reference sections to existing MOCs
-2. **Simple Relationship Tracking**: Add "Related Concepts" field to YAML frontmatter  
+2. **Simple Relationship Tracking**: Add "Related Concepts" field to YAML frontmatter
 3. **Synthesis Hygiene**: Weekly practice of extracting reusable patterns from completed work
 4. **Progressive Enhancement**: Measure impact and add complexity only if beneficial
 
 ### Rationale
+
 - Respects our current successful patterns
 - Addresses actual pain points (discovery, synthesis, evolution)
 - Avoids over-engineering complexity
