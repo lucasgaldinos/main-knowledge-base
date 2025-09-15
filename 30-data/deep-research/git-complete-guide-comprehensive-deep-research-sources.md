@@ -1,3 +1,14 @@
+---
+title: Git Complete Guide Comprehensive Deep Research Sources
+description: Documentation for git complete guide comprehensive deep research sources
+status: draft
+created: '2025-09-15'
+updated: '2025-09-15'
+tags:
+- guide
+- research
+---
+
 # Deep Research Sources: Comprehensive Git Guide
 
 This document contains the sources referenced in the deep research report for the "Comprehensive Git Guide for Advanced Software Engineering and Academic Research."

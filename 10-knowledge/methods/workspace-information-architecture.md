@@ -1,3 +1,34 @@
+---
+title: Designing an Enforceable, Hierarchical Knowledge Base and Academic Development Workspace
+description: Blueprint for robust, scalable information architecture with Git-based validation and pre-commit enforcement
+status: active
+created: 2025-09-10
+updated: 2025-09-15
+tags: [workspace-architecture, information-architecture, academic-structure, governance, validation]
+location: central-knowledge
+previous_location: 20-projects/active/current-work/enforceable-hierachy-folder-workspace.md
+elevation_date: 2025-09-15
+elevation_reason: "Central knowledge reference for workspace organization and enforcement"
+version: 2.0.0
+authors: [lucas_galdino]
+methodology: [FAIR-data, ISO-8601, semantic-versioning, dublin-core]
+enforcement: [pre-commit, git-hooks, json-schema]
+---
+
+# Designing an Enforceable, Hierarchical Knowledge Base and Academic Development Workspace
+
+*With Git-based Validation and Pre-commit Enforcement*
+
+## Executive Summary
+
+- **Goal**: Define a robust, scalable, and enforceable information architecture for an academic knowledge base and development workspace; specify a hierarchical folder structure; formalize a classification/taxonomy model; and implement automated enforcement and validation via git pre-commit hooks and CI.
+- **Approach**: Combine a clean, discoverable hierarchy (for predictable paths) with controlled, faceted metadata (for flexibility and search), codify policy as machine-readable schemas, and enforce via local hooks and CI. Leverage widely adopted standards and tools (FAIR data, JSON Schema, Conventional Commits, SPDX licenses, Git LFS/DVC/DataLad, frictionless data, pre-commit framework, markdown/yaml linters, secrets scanning, and link checks).
+- **Outcome**: A blueprint you can implement immediately: directory structure, naming conventions, metadata schemas, pre-commit configuration, validation scripts, and CI guidance, including migration, governance, and risk management.
+
+## Principles and Standards Referenced
+
+**Reliability Notes**: These standards are established, well-documented, and widely adopted in academic and enterprise environments.
+
 Title: Designing an Enforceable, Hierarchical Knowledge Base and Academic Development Workspace (with Git-based Validation and Pre-commit Enforcement)
 
 Executive summary

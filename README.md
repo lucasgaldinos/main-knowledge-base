@@ -245,6 +245,8 @@ See [CONTRIBUTING.md](<./CONTRIBUTING.md>) for detailed guidelines on:
 - Quality assurance processes
 - Workflow procedures
 
+For comprehensive information architecture and enforcement details, see our [Workspace Information Architecture](10-knowledge/methods/workspace-information-architecture.md) guide.
+
 ## 📖 **About This Organization**
 
 This structure implements the function-based approach detailed in our workspace organization best practices, providing:

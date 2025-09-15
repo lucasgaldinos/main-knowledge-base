@@ -663,7 +663,7 @@ The academic knowledge base organization framework is complete and operational. 
 
 - [ ] **Workspace Reorganization - Phase 1** ⚡ READY FOR IMPLEMENTATION
   - **Analysis**: ✅ Actor-critic analysis completed (15 thoughts, 7 rounds)
-  - **Plan**: ✅ Comprehensive reorganization plan created in workspace-reorganization-plan.md
+  - **Plan**: ✅ Comprehensive reorganization plan created in plan-workspace-reorganization-20250915.md
   - **Core Issue**: Task management files (TODO.md, TASKS.md) buried in deep hierarchy
   - **Solution**: Move TODO.md and TASKS.md to root level for immediate access
   - **Tools Preselected**: grep_search, create_directory, run_in_terminal (git mv), replace_string_in_file, file_search

@@ -4,14 +4,14 @@ description: Governance framework for choosing between Shell and Python scripts 
   infrastructure automation
 status: active
 created: '2025-09-10'
-updated: '2025-09-10'
+updated: '2025-09-15'
 tags:
 - infrastructure
 - scripting
 - governance
 - automation
 - standards
-version: 1.0.0
+version: 1.1.0
 ---
 
 
@@ -57,6 +57,13 @@ echo "✅ Files moved successfully"
 - Complex data processing and validation
 - Content classification and intelligent metadata generation
 
+**UV Environment Requirements**:
+
+- All Python scripts must be compatible with UV package manager
+- Use `uv run script.py` for execution in CI/CD environments
+- Declare dependencies in `pyproject.toml` with appropriate version constraints
+- Support virtual environment isolation through UV's built-in environment management
+
 **Example Use Cases**:
 
 ```python
@@ -92,9 +99,67 @@ All scripts must support:
 3    # Missing dependencies
 ```
 
+### UV Environment Management
+
+**Project Structure Requirements**:
+
+```toml
+# pyproject.toml - Root level configuration
+[project]
+name = "workspace-automation"
+version = "0.1.0"
+description = "Academic workspace automation scripts"
+dependencies = [
+    "pyyaml>=6.0",
+    "rich>=13.0",
+    "click>=8.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0",
+    "black>=23.0",
+    "ruff>=0.1.0",
+]
+```
+
+**Execution Patterns**:
+
+```bash
+# Preferred execution method for Python scripts
+uv run scripts/maintain_organization.py --verbose
+
+# Task automation integration
+uv run --no-project scripts/validate_structure.py
+
+# Development and testing
+uv run pytest scripts/test_*.py
+```
+
+**Environment Validation**:
+
+```python
+# Check UV environment availability
+def check_uv_environment():
+    """Validate UV environment and dependencies."""
+    try:
+        import subprocess
+        result = subprocess.run(['uv', '--version'], capture_output=True)
+        if result.returncode == 0:
+            logger.info(f"UV available: {result.stdout.decode().strip()}")
+            return True
+    except FileNotFoundError:
+        logger.warning("UV not found, falling back to system Python")
+    return False
+```
+
 ### Logging Format
 
-```
+```log
 [TIMESTAMP] [LEVEL] [SCRIPT_NAME] MESSAGE
 [2025-09-10 15:30:45] [INFO] [yaml-enforcer] Processing 45 files
 [2025-09-10 15:30:46] [ERROR] [yaml-enforcer] Invalid YAML in file.md
@@ -168,9 +233,11 @@ Script description and purpose.
 
 Usage:
     script.py [options]
+    uv run script.py [options]  # Preferred execution method
 
 Examples:
-    script.py --verbose --dry-run
+    uv run script.py --verbose --dry-run
+    python script.py --help
 """
 
 import argparse
@@ -204,6 +271,13 @@ def main() -> int:
 if __name__ == '__main__':
     sys.exit(main())
 ```
+
+**UV Integration Requirements**:
+
+- Scripts must work with `uv run` for dependency isolation
+- Dependencies declared in `pyproject.toml` for version management
+- Support both direct execution and UV execution modes
+- Include UV compatibility testing in CI/CD validation
 
 ## Testing Standards
 
@@ -273,17 +347,21 @@ if __name__ == '__main__':
 
 ### Phase 1: Standards Establishment (Week 1)
 
-- [ ] Create script standards documentation
-- [ ] Establish testing frameworks for both technologies
+- [ ] Create script standards documentation ✅
+- [ ] Establish testing frameworks for both technologies  
 - [ ] Set up pre-commit hooks for script validation
 - [ ] Create migration templates and decision flowcharts
+- [ ] **NEW**: Configure UV environment requirements and pyproject.toml ✅
+- [ ] **NEW**: Update all VS Code tasks to use `uv run` execution pattern ✅
 
 ### Phase 2: Current Script Migration (Week 2)
 
-- [ ] Migrate maintain-organization.sh to maintain_organization.py
-- [ ] Update script for new academic directory structure
+- [ ] Migrate maintain-organization.sh to maintain_organization.py ✅
+- [ ] Update script for new academic directory structure ✅
 - [ ] Add comprehensive testing and error handling
 - [ ] Update CI/CD pipeline integration
+- [ ] **NEW**: Ensure all Python scripts work with UV execution
+- [ ] **NEW**: Validate dependency declarations in pyproject.toml
 
 ### Phase 3: Governance Implementation (Week 3)
 
@@ -291,6 +369,8 @@ if __name__ == '__main__':
 - [ ] Create script inventory and assessment dashboard
 - [ ] Establish quarterly review process
 - [ ] Document decision rationale for all scripts
+- [ ] **NEW**: Create UV environment validation checks
+- [ ] **NEW**: Integrate UV-based execution into all automation workflows
 
 ## Decision Documentation Template
 

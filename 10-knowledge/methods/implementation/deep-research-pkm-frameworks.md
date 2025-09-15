@@ -1,3 +1,13 @@
+---
+title: Deep Research Pkm Frameworks
+description: Documentation for deep research pkm frameworks
+status: draft
+created: '2025-09-15'
+updated: '2025-09-15'
+tags:
+- research
+---
+
 # Deep Research: Personal Knowledge Management (PKM) Architectural Styles and Frameworks
 
 ## Executive Summary

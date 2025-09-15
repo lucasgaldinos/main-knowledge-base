@@ -1,3 +1,13 @@
+---
+title: Workspace Organization Best Practices
+description: Documentation for workspace organization best practices
+status: draft
+created: '2025-09-15'
+updated: '2025-09-15'
+tags:
+- documentation
+---
+
 # Best practices for organizing knowledge base folders and methodologies
 
 Executive summary

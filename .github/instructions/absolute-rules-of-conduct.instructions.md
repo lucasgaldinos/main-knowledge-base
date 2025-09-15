@@ -4,7 +4,7 @@ description: Organize the workspace following best practices.
 title: Absolute Rules Of Conduct.Instruction
 status: draft
 created: '2025-09-10'
-updated: '2025-09-10'
+updated: '2025-09-15'
 tags:
 - .github
 - /
@@ -20,6 +20,8 @@ tags:
 - you must ALWAYS generate the document from deep-research with sources after the deep-research. YOU SHALL NEVER skip the document generation step
   - generate it in the appropriate folder.
 - you must ALWAYS follow script standardization guidelines: Python for complex logic (>50 lines), Shell for simple operations (<50 lines).
+- you must ALWAYS use UV environment for Python script execution: `uv run script.py` instead of direct Python execution.
+- you must ALWAYS declare Python dependencies in pyproject.toml with appropriate version constraints for UV compatibility.
 - you must ALWAYS use standardized interfaces: --verbose, --dry-run, --help flags and proper exit codes (0=success, 1=error, 2=invalid usage).
 - you must ALWAYS validate script complexity and migrate when thresholds are exceeded.
 - Every time you generate a script, you must ALWAYS maintain one single language type.

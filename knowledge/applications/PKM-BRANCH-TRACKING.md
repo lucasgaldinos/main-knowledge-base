@@ -1,3 +1,14 @@
+---
+title: Pkm Branch Tracking
+description: Documentation for pkm branch tracking
+status: draft
+created: '2025-09-15'
+updated: '2025-09-15'
+tags:
+- knowledge-base
+- applications
+---
+
 # PKM Organization Style Branch Tracking
 
 This document tracks the different git branches created to demonstrate various Personal Knowledge Management (PKM) organizational styles.
