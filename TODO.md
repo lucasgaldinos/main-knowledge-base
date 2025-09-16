@@ -87,7 +87,7 @@ version: 3.0.0
 - ✅ **Deep research conducted**: Comprehensive analysis of VS Code integrated terminal features using mcp_deep-research
 - ✅ **Knowledge document created**: `10-knowledge/methods/vscode-integrated-terminal-automation-guide.md` (14 sections, academic quality)
 - ✅ **Settings enhanced**: Updated `.vscode/settings.json` with automation profiles, shell integration, and auto-replies
-- ✅ **Quick reference added**: Created `80-resources/tools/vscode-terminal-quick-reference.md` with practical examples
+- ✅ **Quick reference added**: Created `resources/tools/vscode-terminal-quick-reference.md` with practical examples
 - ✅ **Academic structure followed**: All content placed in appropriate academic taxonomy folders
 - ✅ **Documentation updated**: README.md and TODO.md updated to reflect new capabilities
 

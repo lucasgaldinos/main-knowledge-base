@@ -26,7 +26,7 @@ Welcome to the Academic Knowledge Base Organization System! This guide will help
 ├── 📁 50-experiments/     # 🧪 Research experiments
 ├── 📁 60-manuscripts/     # 📝 Publications and outputs
 ├── 📁 70-presentations/   # 🎯 Talks and presentations
-├── 📁 80-resources/       # 🔧 Tools and supporting materials
+├── 📁 resources/          # 🔧 Tools and supporting materials
 └── 📁 90-archive/         # 📚 Legacy and deprecated content
 ```
 
@@ -72,7 +72,7 @@ Archived projects   → 20-projects/archived/
 
 Datasets           → 30-data/
 Code/Scripts       → 40-code/
-Tool documentation → 80-resources/
+Tool documentation → resources/
 Legacy content     → 90-archive/
 ```
 
@@ -145,7 +145,7 @@ version: [X.Y.Z]
 # Structure validation
 python3 .kb/scripts/validate_structure.py
 
-# Metadata validation  
+# Metadata validation
 python3 .kb/scripts/validate_metadata.py
 
 # Filename compliance
@@ -226,8 +226,8 @@ python3 40-code/organization/yaml-frontmatter-enforcer.py --fix
 
 ### Resource Management
 
-- **Tool documentation** in `80-resources/tools/`
-- **MCP server guides** in `80-resources/mcp-servers-guide/`
+- **Tool documentation** in `resources/tools/`
+- **MCP server guides** in `resources/literature/mcp-servers-guide/`
 - **VSCode customization** guides
 - **Comprehensive reference** materials
 
@@ -245,7 +245,7 @@ python3 40-code/organization/yaml-frontmatter-enforcer.py --fix
 
 - **Project setup**: Follow examples in `20-projects/active/`
 - **Research documentation**: See patterns in `10-knowledge/`
-- **Tool integration**: Reference `80-resources/` guides
+- **Tool integration**: Reference `resources/` guides
 - **Data management**: Follow `30-data/` organization
 
 ### Recovery Procedures
@@ -263,6 +263,6 @@ For system improvements or policy changes, update the governance framework in `.
 
 ---
 
-**Last Updated**: September 11, 2025  
-**Framework Version**: 2.0.0 (Academic Taxonomy)  
+**Last Updated**: September 11, 2025
+**Framework Version**: 2.0.0 (Academic Taxonomy)
 **Governance**: Automated with manual oversight

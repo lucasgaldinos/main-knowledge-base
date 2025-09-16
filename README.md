@@ -31,7 +31,7 @@ A professionally organized, academically structured repository for artificial in
 ├── 📁 50-experiments/     # 🧪 Research experiments
 ├── 📁 60-manuscripts/     # 📝 Publications and outputs
 ├── 📁 70-presentations/   # 🎯 Talks and presentations
-├── 📁 80-resources/       # 🔧 Tools and supporting materials
+├── 📁 resources/          # 🔧 Tools and supporting materials
 └── 📁 90-archive/         # 📚 Legacy and deprecated content
 ```
 
@@ -55,7 +55,7 @@ A professionally organized, academically structured repository for artificial in
 
 - **Comprehensive automation guide**: Added `10-knowledge/methods/vscode-integrated-terminal-automation-guide.md`
 - **Enhanced settings**: Updated `.vscode/settings.json` with automation-focused terminal profiles
-- **Quick reference**: Created `80-resources/tools/vscode-terminal-quick-reference.md`
+- **Quick reference**: Created `resources/tools/vscode-terminal-quick-reference.md`
 - **Shell integration**: Configured advanced terminal features for development workflow optimization
 
 ## 📚 Key Resources

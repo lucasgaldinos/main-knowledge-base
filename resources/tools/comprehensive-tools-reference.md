@@ -993,5 +993,7 @@ A proven methodology for comprehensive content development with external validat
 
 ## Related Documentation
 
-- [Implementation Experience Report](../20-projects/completed/workspace-organization-implementation-experience-20250915.md) - Real-world validation results and lessons learned
-- [UV Integration Guidelines](../.github/instructions/script-standardization-guidelines.instructions.md) - Standard patterns for UV environment management
+- [Implementation Experience Report](../../20-projects/completed/workspace-organization-implementation-experience-20250915.md) - Real-world validation results and lessons learned from comprehensive workspace reorganization
+- [UV Integration Guidelines](../../.github/instructions/script-standardization-guidelines.instructions.md) - Standard patterns for UV environment management and Python script execution
+- [Academic Link Standards](../../10-knowledge/methods/academic-workspace-link-standards-20250915.md) - Cross-reference system and linking conventions for academic workspace
+- [MCP Integration Guide](../../10-knowledge/methods/mcp-integration-comprehensive-guide.md) - Comprehensive methodology for Model Context Protocol server integration

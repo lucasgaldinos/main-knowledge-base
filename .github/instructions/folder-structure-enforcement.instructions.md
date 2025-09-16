@@ -58,7 +58,7 @@ citations: []
 ├── 50-experiments/     # Reproducible experiments
 ├── 60-manuscripts/     # Academic writing and publications
 ├── 70-presentations/   # Talks and presentations
-├── 80-resources/       # Templates and reusable assets
+├── resources/           # Templates and reusable assets
 ├── 90-archive/         # Cold storage for deprecated content
 ├── TODO.md             # Operational task management (ROOT LEVEL)
 └── TASKS.md            # Task analysis and planning (ROOT LEVEL)

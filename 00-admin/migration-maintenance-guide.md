@@ -51,7 +51,7 @@ Scripts/code          → 40-code/
 Experiments           → 50-experiments/
 Publications          → 60-manuscripts/
 Presentations         → 70-presentations/
-Tools & references    → 80-resources/
+Tools & references    → resources/
 Deprecated content    → 90-archive/
 ```
 
@@ -64,7 +64,7 @@ Deprecated content    → 90-archive/
 git add -A && git commit -m "Pre-migration backup"
 
 # Create target directories
-mkdir -p {00-admin,10-knowledge,20-projects,30-data,40-code,50-experiments,60-manuscripts,70-presentations,80-resources,90-archive}
+mkdir -p {00-admin,10-knowledge,20-projects,30-data,40-code,50-experiments,60-manuscripts,70-presentations,resources,90-archive}
 
 # Set up governance framework
 cp -r .kb/ ./ # If not already present

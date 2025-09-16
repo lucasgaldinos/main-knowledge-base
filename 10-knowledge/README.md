@@ -52,6 +52,6 @@ This directory will consolidate content from:
 
 ## Related Directories
 
-- `80-resources/` - Templates and reusable assets
+- `resources/` - Templates and reusable assets
 - `20-projects/` - Project-specific documentation
 - `resources/literature/` - Legacy literature (to be migrated)

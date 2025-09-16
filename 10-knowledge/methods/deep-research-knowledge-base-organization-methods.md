@@ -104,13 +104,13 @@ A comprehensive organizational framework was successfully implemented, including
 ```
 00-admin/          # Governance and repository meta
 10-knowledge/      # Consolidated knowledge base
-20-projects/       # Project lifecycle management  
+20-projects/       # Project lifecycle management
 30-data/          # Datasets (FAIR-compliant)
 40-code/          # Shared libraries and tools
 50-experiments/   # Reproducible experiments
 60-manuscripts/   # Academic writing
 70-presentations/ # Talks and seminars
-80-resources/     # Templates and assets
+resources/       # Templates and assets
 90-archive/       # Cold storage
 ```
 
@@ -302,6 +302,6 @@ The implementation provides immediate organizational improvements while establis
 
 ---
 
-*Research conducted: 2025-01-11*  
-*Implementation status: Phase 1 complete, automated governance operational*  
+*Research conducted: 2025-01-11*
+*Implementation status: Phase 1 complete, automated governance operational*
 *Next action: Systematic content migration planning*

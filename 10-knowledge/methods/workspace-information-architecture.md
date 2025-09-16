@@ -98,7 +98,7 @@ Top-level directory structure (Johnny Decimal-inspired hierarchy with PARA-compa
     - metadata.yaml with authors (ORCIDs), affiliations, target journal
 - 70-presentations/ — Talks, seminars, posters
   - PRES-<yyyy>-<event>-<slug>/ (source + exported PDF)
-- 80-resources/ — Templates, style guides, reusable checklists
+- resources/ — Templates, style guides, tools documentation, and data resources
   - cookiecutters/, pandoc/, latex/, word/, slides/
 - 90-archive/ — Cold storage for retired projects/materials
   - mirror structure; only archived items moved here with status=archived

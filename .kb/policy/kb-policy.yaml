@@ -71,9 +71,9 @@ paths:
   - path: '70-presentations'
     description: 'Conference talks, seminars, and presentations'
     
-  # 80-resources: Templates and reusable assets
-  - path: '80-resources'
-    description: 'Templates, style guides, and reusable checklists'
+  # resources: Supporting materials and references
+  - path: 'resources'
+    description: 'Templates, tools documentation, literature, and data resources'
     
   # 90-archive: Cold storage
   - path: '90-archive'

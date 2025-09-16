@@ -258,9 +258,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--verbose', action='store_true')
     parser.add_argument('--dry-run', action='store_true')
-    
+
     args = parser.parse_args()
-    
+
     try:
         # Script logic
         return 0
@@ -348,7 +348,7 @@ if __name__ == '__main__':
 ### Phase 1: Standards Establishment (Week 1)
 
 - [ ] Create script standards documentation ✅
-- [ ] Establish testing frameworks for both technologies  
+- [ ] Establish testing frameworks for both technologies
 - [ ] Set up pre-commit hooks for script validation
 - [ ] Create migration templates and decision flowcharts
 - [ ] **NEW**: Configure UV environment requirements and pyproject.toml ✅

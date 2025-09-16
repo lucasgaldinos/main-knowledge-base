@@ -14,7 +14,7 @@ authors: [lucas_galdino]
 synthesis_note: "Unified from scattered documentation across workspace"
 original_sources:
   - 10-knowledge/methods/vscode-copilot-instructions-guide.md
-  - 80-resources/vscode-copilot-complete-guide.md
+  - resources/tools/vscode-copilot-complete-guide.md
   - 20-projects/active/current-work/vscode-toolset-usage-guide.md
   - 20-projects/completed/vscode-workspace-configuration-resolution-completion-report.md
   - Deep research on VS Code Copilot best practices and MCP integration
@@ -30,6 +30,7 @@ research_foundation: "Based on comprehensive deep research of VS Code Copilot be
 This master guide synthesizes industry best practices, academic research workflows, and enterprise patterns for GitHub Copilot in VS Code. It provides comprehensive coverage of custom instructions, MCP server integration, toolset configuration, and professional development workflows based on systematic research and proven implementations.
 
 **Key Benefits**:
+
 - ✅ Unified knowledge from scattered documentation sources
 - ✅ Research-backed best practices with confidence levels
 - ✅ Academic workflow integration patterns
@@ -64,14 +65,14 @@ graph TD
     C --> D[AI Processing Layer]
     D --> E[Tool Integration Layer]
     E --> F[Output Generation]
-    
+
     subgraph Context Sources
         G[Editor Context]
         H[Workspace Index]
         I[MCP Servers]
         J[Chat Participants]
     end
-    
+
     subgraph Tool Ecosystem
         K[@workspace]
         L[@vscode]
@@ -79,7 +80,7 @@ graph TD
         N[@github]
         O[MCP Tools]
     end
-    
+
     C --> G
     C --> H
     C --> I
@@ -94,6 +95,7 @@ graph TD
 ### 1.2 Context Channels and Interaction Modes
 
 #### Context Providers (High Confidence)
+
 - **Editor Context**: Selected code, open files, symbols/references
 - **Workspace Index**: Codebase graph, build files, README, CONTRIBUTING files
 - **Chat Participants**: VS Code agents and slash-commands (`/help` for discovery)
@@ -101,6 +103,7 @@ graph TD
 - **MCP Servers**: Custom tool and data integrations via Model Context Protocol
 
 #### Interaction Modes
+
 - **Inline Completions**: Low-latency ghost text for local scope continuation
 - **Inline Chat**: Selection-aware edits with visible diffs
 - **Chat Panel**: Multi-turn conversations for complex tasks
@@ -128,25 +131,25 @@ Based on academic research environments, key integration points include:
   // Inline suggestions
   "editor.inlineSuggest.enabled": true,
   "editor.suggestSelection": "first",
-  
+
   // Copilot-specific
   "github.copilot.enable": {
     "*": true,
     "yaml": true,
     "plaintext": false
   },
-  
+
   // Productivity enhancements
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
     "source.organizeImports": true
   },
-  
+
   // Context optimization
   "editor.suggest.showWords": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
-  
+
   // Telemetry (adjust to organizational policy)
   "telemetry.telemetryLevel": "error"
 }
@@ -198,7 +201,7 @@ Based on academic research environments, key integration points include:
 **Academic Research Template**:
 
 ```markdown
-You are an expert software engineer and academic researcher working in a structured knowledge base environment. 
+You are an expert software engineer and academic researcher working in a structured knowledge base environment.
 
 ## Context and Standards
 - Follow academic rigor in all outputs with proper citation practices
@@ -302,6 +305,7 @@ Please implement with academic rigor and proper attribution.
 ### 4.1 MCP Architecture and Benefits
 
 **Model Context Protocol Benefits**:
+
 - **Decoupling**: Standard interface for AI assistant tool integration
 - **Security**: Clear capability boundaries and auditing
 - **Composability**: Multiple servers orchestrated in single conversation
@@ -355,12 +359,14 @@ Please implement with academic rigor and proper attribution.
 **Security Best Practices** (Confidence: High):
 
 #### Access Control
+
 - **Principle of Least Privilege**: Minimal necessary permissions per server
 - **Read-Only First**: Start with read-only access; add write capabilities incrementally
 - **Sandboxing**: Isolate MCP servers from sensitive systems
 - **Credential Separation**: Unique, scoped credentials per server
 
 #### Monitoring and Auditing
+
 ```python
 # Example audit logging for MCP servers
 {
@@ -376,6 +382,7 @@ Please implement with academic rigor and proper attribution.
 ```
 
 #### Rate Limiting and Budgets
+
 - **Request Quotas**: Prevent over-querying external APIs
 - **Latency Budgets**: Fail gracefully on slow responses
 - **Cost Controls**: Monitor API usage and implement spending limits
@@ -383,16 +390,19 @@ Please implement with academic rigor and proper attribution.
 ### 4.4 Academic MCP Server Categories
 
 #### Research Data Access
+
 - **ArXiv Integration**: Paper search, metadata extraction, PDF processing
 - **Database Servers**: Literature databases, research datasets, experimental results
 - **File System**: Controlled access to research directories and outputs
 
 #### Analysis and Computation
+
 - **Statistical Tools**: R/Python statistical analysis endpoints
 - **Notebook Servers**: Jupyter notebook execution and result retrieval
 - **Visualization**: Automated chart and figure generation
 
 #### Collaboration and Documentation
+
 - **Citation Management**: Zotero, Mendeley, or EndNote integration
 - **Lab Notebooks**: Electronic lab notebook systems
 - **Collaboration Tools**: Slack, Teams, or Discord integration for research teams
@@ -406,16 +416,19 @@ Please implement with academic rigor and proper attribution.
 Based on academic research workflows, 10 specialized toolsets provide comprehensive automation:
 
 #### Research and Analysis Toolsets
+
 1. **Deep Research Automation** - Literature review and synthesis
 2. **Data Analysis** - Statistical analysis and visualization
 3. **Academic Writing** - Paper drafting and citation management
 
 #### Development and Infrastructure
+
 4. **Code Quality** - Testing, linting, and documentation
 5. **DevOps and Deployment** - Container management and CI/CD
 6. **Database and Storage** - Data management and backup
 
 #### Documentation and Communication
+
 7. **Technical Documentation** - API docs and user guides
 8. **Project Management** - Task tracking and milestone management
 9. **Knowledge Management** - Information organization and retrieval
@@ -424,6 +437,7 @@ Based on academic research workflows, 10 specialized toolsets provide comprehens
 ### 5.2 Toolset Implementation Patterns
 
 #### Configuration Hierarchy (Confidence: High)
+
 ```
 1. Profile-level settings (.vscode/settings.json in user profile)
 2. Workspace-level settings (.vscode/settings.json in project root)
@@ -432,6 +446,7 @@ Based on academic research workflows, 10 specialized toolsets provide comprehens
 ```
 
 #### Toolset Activation Example
+
 ```json
 {
   "github.copilot.chat.experimental.codeGeneration.instructions": [
@@ -450,6 +465,7 @@ Based on academic research workflows, 10 specialized toolsets provide comprehens
 ### 5.3 Academic Workflow Integration
 
 #### Literature Review Workflow
+
 ```mermaid
 graph LR
     A[Research Query] --> B[ArXiv Search]
@@ -461,6 +477,7 @@ graph LR
 ```
 
 #### Experimental Code Development
+
 ```mermaid
 graph LR
     A[Hypothesis] --> B[Test Design]
@@ -506,30 +523,32 @@ graph LR
 ### 6.2 Academic Code Quality Standards
 
 #### Testing Requirements
+
 - **Unit Tests**: 100% coverage for core algorithms
 - **Property-Based Tests**: Hypothesis-driven validation
 - **Regression Tests**: Prevent algorithm degradation
 - **Reproducibility Tests**: Ensure consistent results
 
 #### Documentation Standards
+
 ```python
-def research_algorithm(data: np.ndarray, 
+def research_algorithm(data: np.ndarray,
                       parameters: Dict[str, float],
                       validation_mode: bool = False) -> Results:
     """
     Implements [Algorithm Name] as described in [Citation].
-    
+
     Args:
         data: Input dataset with shape (n_samples, n_features)
         parameters: Algorithm hyperparameters as defined in paper
         validation_mode: Enable additional validation checks
-        
+
     Returns:
         Results object containing predictions and metadata
-        
+
     Raises:
         ValueError: If input data doesn't meet algorithm requirements
-        
+
     References:
         [1] Author, A. (2025). Paper Title. Journal, 1(1), 1-10.
     """
@@ -538,6 +557,7 @@ def research_algorithm(data: np.ndarray,
 ### 6.3 Multi-File Refactoring Workflows
 
 #### Incremental Refactoring Pattern
+
 ```markdown
 # Refactoring Plan
 
@@ -560,6 +580,7 @@ def research_algorithm(data: np.ndarray,
 ### 6.4 Code Review and Collaboration
 
 #### AI-Assisted Code Review
+
 ```markdown
 # Review Checklist for AI-Generated Code
 
@@ -591,12 +612,14 @@ def research_algorithm(data: np.ndarray,
 ### 7.1 Data Protection and Privacy
 
 #### Sensitive Data Handling (Confidence: High)
+
 - **Never** include secrets, API keys, or credentials in prompts
 - **Redact** PII before sharing code context with AI
 - **Use** environment variables for sensitive configuration
 - **Implement** server-side redaction for MCP servers
 
 #### Example Data Redaction
+
 ```python
 def redact_sensitive_data(code_context: str) -> str:
     """Remove sensitive information from code context"""
@@ -605,17 +628,18 @@ def redact_sensitive_data(code_context: str) -> str:
         r'api_key\s*=\s*["\'][^"\']+["\']',
         r'secret\s*=\s*["\'][^"\']+["\']'
     ]
-    
+
     redacted = code_context
     for pattern in patterns:
         redacted = re.sub(pattern, 'password="[REDACTED]"', redacted)
-    
+
     return redacted
 ```
 
 ### 7.2 Enterprise Governance Framework
 
 #### Policy Configuration
+
 ```json
 {
   "github.copilot.advanced": {
@@ -631,6 +655,7 @@ def redact_sensitive_data(code_context: str) -> str:
 ```
 
 #### Audit and Compliance
+
 - **Usage Monitoring**: Track Copilot usage patterns and acceptance rates
 - **Code Provenance**: Maintain records of AI-generated vs human-written code
 - **License Compliance**: Regular audits for potential copyright issues
@@ -639,12 +664,14 @@ def redact_sensitive_data(code_context: str) -> str:
 ### 7.3 Risk Management Strategies
 
 #### Change Control for AI-Generated Code
+
 - **Review Requirements**: Mandatory human review for AI-generated changes
 - **Testing Gates**: Comprehensive testing before deployment
 - **Gradual Rollout**: Incremental deployment with monitoring
 - **Rollback Plans**: Quick rollback procedures for problematic changes
 
 #### Model Hallucination Mitigation
+
 - **Test-First Approach**: Generate tests before implementation
 - **Citation Verification**: Validate any claimed API or library references
 - **Static Analysis**: Use linters and type checkers as guardrails
@@ -660,11 +687,13 @@ def redact_sensitive_data(code_context: str) -> str:
 
 **Symptom**: Workspace-level toolsets not working consistently
 **Root Causes** (Based on real resolution):
+
 - Empty markdown files causing Git reference errors
 - Configuration precedence conflicts
 - Missing file content causing VS Code parsing issues
 
 **Resolution Steps**:
+
 1. **Audit Empty Files**
    ```bash
    find . -name "*.md" -size 0 -ls
@@ -685,11 +714,13 @@ def redact_sensitive_data(code_context: str) -> str:
 #### Performance Optimization
 
 **Context Window Management**:
+
 - Limit open files to relevant context
 - Use specific file selections rather than workspace-wide searches
 - Implement context pruning for large codebases
 
 **Response Time Optimization**:
+
 ```json
 {
   "github.copilot.advanced": {
@@ -703,12 +734,14 @@ def redact_sensitive_data(code_context: str) -> str:
 ### 8.2 MCP Server Debugging
 
 #### Connection Issues
+
 ```bash
 # Test MCP server connectivity
 curl -X POST http://localhost:8000/mcp/health
 ```
 
 #### Logging Configuration
+
 ```python
 import logging
 
@@ -726,23 +759,25 @@ logging.basicConfig(
 ### 8.3 Academic Workflow Optimization
 
 #### Research Efficiency Patterns
+
 - **Batch Processing**: Group similar research tasks
 - **Template Reuse**: Standardize common analysis patterns
 - **Result Caching**: Store intermediate results for reuse
 - **Incremental Updates**: Regular small improvements vs large refactors
 
 #### Citation and Reference Management
+
 ```python
 def validate_citations(document: str) -> List[str]:
     """Validate academic citations in document"""
     citation_pattern = r'\[@\w+\d{4}\w*\]'
     citations = re.findall(citation_pattern, document)
-    
+
     missing_refs = []
     for citation in citations:
         if not validate_bibliography_entry(citation):
             missing_refs.append(citation)
-    
+
     return missing_refs
 ```
 
@@ -753,6 +788,7 @@ def validate_citations(document: str) -> List[str]:
 ### 9.1 Initial Setup Checklist
 
 #### Basic Configuration
+
 - [ ] Install GitHub Copilot extension
 - [ ] Configure organization-level policies
 - [ ] Set up custom keybindings
@@ -760,6 +796,7 @@ def validate_citations(document: str) -> List[str]:
 - [ ] Configure workspace-specific settings
 
 #### Security Setup
+
 - [ ] Enable public code matching filter
 - [ ] Configure data handling policies
 - [ ] Set up credential management
@@ -767,6 +804,7 @@ def validate_citations(document: str) -> List[str]:
 - [ ] Establish review processes
 
 #### Academic Integration
+
 - [ ] Configure literature access tools
 - [ ] Set up citation management
 - [ ] Establish data analysis workflows
@@ -776,6 +814,7 @@ def validate_citations(document: str) -> List[str]:
 ### 9.2 MCP Server Deployment Checklist
 
 #### Pre-Deployment
+
 - [ ] Security review of server capabilities
 - [ ] Rate limiting and quota configuration
 - [ ] Monitoring and alerting setup
@@ -783,6 +822,7 @@ def validate_citations(document: str) -> List[str]:
 - [ ] Documentation and runbooks
 
 #### Deployment
+
 - [ ] Server configuration validation
 - [ ] Connection testing
 - [ ] Permission verification
@@ -790,6 +830,7 @@ def validate_citations(document: str) -> List[str]:
 - [ ] User access provisioning
 
 #### Post-Deployment
+
 - [ ] Usage monitoring
 - [ ] Error rate tracking
 - [ ] Performance optimization
@@ -799,6 +840,7 @@ def validate_citations(document: str) -> List[str]:
 ### 9.3 Workflow Validation Checklist
 
 #### Development Workflow
+
 - [ ] Test-first development process
 - [ ] Code review integration
 - [ ] Continuous integration setup
@@ -806,6 +848,7 @@ def validate_citations(document: str) -> List[str]:
 - [ ] Documentation generation
 
 #### Academic Workflow
+
 - [ ] Literature review automation
 - [ ] Data analysis standardization
 - [ ] Result validation procedures
@@ -819,12 +862,14 @@ def validate_citations(document: str) -> List[str]:
 ### 10.1 Emerging Trends
 
 #### Agentic Development Patterns
+
 - **Multi-File Coordination**: AI agents managing complex refactors
 - **Autonomous Testing**: Self-improving test generation
 - **Code Evolution**: Iterative improvement suggestions
 - **Architecture Optimization**: System-level design recommendations
 
 #### Enhanced Context Integration
+
 - **Repository-Level Understanding**: Full codebase comprehension
 - **Runtime Context**: Integration with execution environments
 - **Team Knowledge**: Shared institutional knowledge access
@@ -833,12 +878,14 @@ def validate_citations(document: str) -> List[str]:
 ### 10.2 Academic Research Applications
 
 #### Novel Integration Opportunities
+
 - **Reproducible Research**: Automated experiment documentation
 - **Collaborative Writing**: Multi-author document coordination
 - **Peer Review**: Automated initial review and feedback
 - **Knowledge Discovery**: Cross-domain research connections
 
 #### Research Infrastructure Evolution
+
 ```mermaid
 graph TB
     A[Research Question] --> B[Literature Review AI]
@@ -854,12 +901,14 @@ graph TB
 ### 10.3 Scalability and Performance
 
 #### Enterprise Scaling Patterns
+
 - **Federated Configuration**: Organization-wide standard with local customization
 - **Resource Management**: Shared infrastructure for MCP servers
 - **Knowledge Sharing**: Team-specific prompt libraries and patterns
 - **Continuous Improvement**: Feedback loops and optimization
 
 #### Performance Monitoring
+
 ```python
 # Example metrics collection
 metrics = {
@@ -896,6 +945,6 @@ For specific implementation support, refer to the detailed sections above and th
 
 ---
 
-**Last Updated**: September 15, 2025  
-**Review Schedule**: Monthly updates and quarterly comprehensive reviews  
+**Last Updated**: September 15, 2025
+**Review Schedule**: Monthly updates and quarterly comprehensive reviews
 **Feedback**: Submit improvements via repository issue tracking
